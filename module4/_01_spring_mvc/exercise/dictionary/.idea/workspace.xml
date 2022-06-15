@@ -20,131 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd527633-2a04-4d15-a888-d77105f62732" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/java/com/currency_conversion/controller/CurrencyConversion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/java/com/currency_conversion/service/CurrencyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/WEB-INF/views/currency.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/bootstrap413/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/bootstrap413/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/bootstrap413/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/bootstrap413/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/bootstrap413/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/bootstrap413/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/bootstrap413/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/bootstrap413/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/bootstrap413/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/bootstrap413/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/bootstrap413/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/bootstrap413/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/bootstrap413/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/bootstrap413/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/bootstrap413/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/bootstrap413/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/bootstrap413/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/bootstrap413/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/bootstrap413/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/bootstrap413/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/css/dataTables.bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/css/dataTables.bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/css/dataTables.bootstrap4.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/css/dataTables.bootstrap4.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/css/dataTables.foundation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/css/dataTables.foundation.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/css/dataTables.jqueryui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/css/dataTables.jqueryui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/css/dataTables.semanticui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/css/dataTables.semanticui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/css/jquery.dataTables.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/css/jquery.dataTables.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/images/sort_asc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/images/sort_asc_disabled.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/images/sort_both.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/images/sort_desc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/images/sort_desc_disabled.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/js/dataTables.bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/js/dataTables.bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/js/dataTables.bootstrap4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/js/dataTables.bootstrap4.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/js/dataTables.foundation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/js/dataTables.foundation.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/js/dataTables.jqueryui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/js/dataTables.jqueryui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/js/dataTables.semanticui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/js/dataTables.semanticui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/js/jquery.dataTables.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/datatables/js/jquery.dataTables.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../currency_conversion/src/main/webapp/jquery/jquery-3.5.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dictionary/controller/CurrencyConversion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dictionary/service/CurrencyDictionaryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dictionary/service/DictionaryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/dictionary.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap413/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap413/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap413/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap413/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap413/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap413/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap413/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap413/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap413/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap413/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap413/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap413/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap413/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap413/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap413/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap413/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap413/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap413/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap413/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap413/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/css/dataTables.bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/css/dataTables.bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/css/dataTables.bootstrap4.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/css/dataTables.bootstrap4.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/css/dataTables.foundation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/css/dataTables.foundation.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/css/dataTables.jqueryui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/css/dataTables.jqueryui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/css/dataTables.semanticui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/css/dataTables.semanticui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/css/jquery.dataTables.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/css/jquery.dataTables.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/images/sort_asc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/images/sort_asc_disabled.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/images/sort_both.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/images/sort_desc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/images/sort_desc_disabled.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/js/dataTables.bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/js/dataTables.bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/js/dataTables.bootstrap4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/js/dataTables.bootstrap4.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/js/dataTables.foundation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/js/dataTables.foundation.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/js/dataTables.jqueryui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/js/dataTables.jqueryui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/js/dataTables.semanticui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/js/dataTables.semanticui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/js/jquery.dataTables.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/js/jquery.dataTables.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery/jquery-3.5.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice/.idea/practice.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice/spring_greeting/src/main/java/com/spring_greeting/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice/spring_greeting/src/main/java/com/spring_greeting/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice/spring_greeting/src/main/java/com/spring_greeting/SpringGreetingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +60,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../currency_conversion" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -283,6 +159,7 @@
       <option name="presentableId" value="Default" />
       <updated>1655190543605</updated>
       <workItem from="1655190546732" duration="5646000" />
+      <workItem from="1655253600628" duration="72000" />
     </task>
     <servers />
   </component>
@@ -299,6 +176,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1655190602889">
@@ -313,6 +191,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="360" y="180" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.768@0.0.1366.768" timestamp="1655191649626" />
+    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1655253664079">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1655253664079" />
     <state width="905" height="192" key="GridCell.Tab.0.bottom" timestamp="1655192247015">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
