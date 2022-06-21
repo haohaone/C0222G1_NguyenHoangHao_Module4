@@ -20,153 +20,84 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef78ad02-d54b-43bd-a929-597cd474cbf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../product/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/java/com/product/controller/FilterUTF8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/java/com/product/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/java/com/product/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/java/com/product/repository/BaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/java/com/product/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/java/com/product/repository/imp/ProductRepositoryImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/java/com/product/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/java/com/product/service/imp/ProductServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/resources/hibernate.conf.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/WEB-INF/views/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/WEB-INF/views/product-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/bootstrap413/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/bootstrap413/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/bootstrap413/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/bootstrap413/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/bootstrap413/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/bootstrap413/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/bootstrap413/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/bootstrap413/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/bootstrap413/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/bootstrap413/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/bootstrap413/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/bootstrap413/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/bootstrap413/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/bootstrap413/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/bootstrap413/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/bootstrap413/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/bootstrap413/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/bootstrap413/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/bootstrap413/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/bootstrap413/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/css/dataTables.bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/css/dataTables.bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/css/dataTables.bootstrap4.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/css/dataTables.bootstrap4.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/css/dataTables.foundation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/css/dataTables.foundation.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/css/dataTables.jqueryui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/css/dataTables.jqueryui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/css/dataTables.semanticui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/css/dataTables.semanticui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/css/jquery.dataTables.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/css/jquery.dataTables.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/images/sort_asc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/images/sort_asc_disabled.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/images/sort_both.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/images/sort_desc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/images/sort_desc_disabled.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/js/dataTables.bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/js/dataTables.bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/js/dataTables.bootstrap4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/js/dataTables.bootstrap4.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/js/dataTables.foundation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/js/dataTables.foundation.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/js/dataTables.jqueryui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/js/dataTables.jqueryui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/js/dataTables.semanticui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/js/dataTables.semanticui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/js/jquery.dataTables.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/datatables/js/jquery.dataTables.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../product/src/main/webapp/boostrap/jquery/jquery-3.5.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/simple_music_web.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/music_web/controller/FilterUTF8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/music_web/controller/MusicController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/music_web/model/Music.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/music_web/repository/BaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/music_web/repository/MusicRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/music_web/repository/imp/MusicRepositoryImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/music_web/service/MusicService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/music_web/service/imp/MusicServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.conf.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/music-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/bootstrap413/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/bootstrap413/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/bootstrap413/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/bootstrap413/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/bootstrap413/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/bootstrap413/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/bootstrap413/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/bootstrap413/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/bootstrap413/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/bootstrap413/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/bootstrap413/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/bootstrap413/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/bootstrap413/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/bootstrap413/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/bootstrap413/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/bootstrap413/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/bootstrap413/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/bootstrap413/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/bootstrap413/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/bootstrap413/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/css/dataTables.bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/css/dataTables.bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/css/dataTables.bootstrap4.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/css/dataTables.bootstrap4.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/css/dataTables.foundation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/css/dataTables.foundation.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/css/dataTables.jqueryui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/css/dataTables.jqueryui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/css/dataTables.semanticui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/css/dataTables.semanticui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/css/jquery.dataTables.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/css/jquery.dataTables.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/images/sort_asc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/images/sort_asc_disabled.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/images/sort_both.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/images/sort_desc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/images/sort_desc_disabled.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/js/dataTables.bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/js/dataTables.bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/js/dataTables.bootstrap4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/js/dataTables.bootstrap4.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/js/dataTables.foundation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/js/dataTables.foundation.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/js/dataTables.jqueryui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/js/dataTables.jqueryui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/js/dataTables.semanticui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/js/dataTables.semanticui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/js/jquery.dataTables.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/datatables/js/jquery.dataTables.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/boostrap/jquery/jquery-3.5.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../_04_thymeleaf/exercise/product/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../_04_thymeleaf/exercise/product/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../_04_thymeleaf/exercise/product/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../_04_thymeleaf/exercise/product/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/java/com/blog/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/java/com/blog/controller/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/java/com/blog/controller/FilterUTF8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/java/com/blog/model/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/java/com/blog/model/BlogDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/java/com/blog/repository/BlogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/java/com/blog/service/BlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/WEB-INF/views/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/WEB-INF/views/music-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/css/dataTables.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/css/dataTables.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/css/dataTables.bootstrap4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/css/dataTables.bootstrap4.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/css/dataTables.foundation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/css/dataTables.foundation.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/css/dataTables.jqueryui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/css/dataTables.jqueryui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/css/dataTables.semanticui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/css/dataTables.semanticui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/css/jquery.dataTables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/css/jquery.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/images/sort_asc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/images/sort_asc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/images/sort_both.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/images/sort_desc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/images/sort_desc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/js/dataTables.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/js/dataTables.bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/js/dataTables.bootstrap4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/js/dataTables.bootstrap4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/js/dataTables.foundation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/js/dataTables.foundation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/js/dataTables.jqueryui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/js/dataTables.jqueryui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/js/dataTables.semanticui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/js/dataTables.semanticui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/js/jquery.dataTables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/js/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/jquery/jquery-3.5.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/music_mp3/cuong.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/music_mp3/hao.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/music_mp3/oah.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/music_mp3/ptctt.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/music_mp3/trung.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/music_mp3/vnkxd.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -312,6 +243,7 @@
       <option name="presentableId" value="Default" />
       <updated>1655696429942</updated>
       <workItem from="1655696434677" duration="19270000" />
+      <workItem from="1655726507331" duration="5467000" />
     </task>
     <servers />
   </component>
@@ -328,6 +260,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="582" y="275" key="#Assign_Data_Sources" timestamp="1655698748214">
@@ -354,10 +287,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="438" y="86" key="#xdebugger.evaluate/0.0.1366.768@0.0.1366.768" timestamp="1655711224051" />
-    <state x="463" y="137" width="440" height="492" key="FileChooserDialogImpl" timestamp="1655718426009">
+    <state x="463" y="137" width="440" height="492" key="FileChooserDialogImpl" timestamp="1655783222950">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="137" width="440" height="492" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1655718426009" />
+    <state x="463" y="137" width="440" height="492" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1655783222950" />
     <state width="905" height="217" key="GridCell.Tab.0.bottom" timestamp="1655720801727">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -422,10 +355,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="905" height="209" key="GridCell.Tab.3.right/0.0.1366.768@0.0.1366.768" timestamp="1655711422068" />
-    <state x="65" y="0" key="new project wizard" timestamp="1655718264495">
+    <state x="65" y="0" key="new project wizard" timestamp="1655783225337">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="65" y="0" key="new project wizard/0.0.1366.768@0.0.1366.768" timestamp="1655718264495" />
+    <state x="65" y="0" key="new project wizard/0.0.1366.768@0.0.1366.768" timestamp="1655783225337" />
     <state x="339" y="172" key="run.anything.popup" timestamp="1655710135152">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

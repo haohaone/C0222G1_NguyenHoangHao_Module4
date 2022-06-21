@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sách blog</title>
+    <link rel="stylesheet" href="/resources/bootstrap413/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/resources/datatables/css/dataTables.bootstrap4.min.css"/>
+    <style>
+        .center-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .head-text {
+            font-size: 30px;
+            font-weight: bold;
+            height: 10%;
+        }
+
+        .footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        table.dataTable thead th {
+            border-top: none;
+        }
+    </style>
+</head>
+<body class="h-100">
+<nav class="navbar navbar-light bg-dark text-white center-box head-text">
+    Danh sách blog
+</nav>
+<div class="p-0 m-0" style="width: 10%; float: left">&nbsp;</div>
+<div class="h-100 p-0 m-0" style="width: 80%; float: left">
+    <table class="table text-center table-striped bg-white w-100 border-0" id="tableEmployee">
+        <thead>
+        <tr>
+            <th colspan="11">
+                <div class="w-100 footer">
+                    <a href="/create">Thêm mới</a>
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <th>No.</th>
+            <th>Tiêu đề</th>
+            <th>Xem chi tiết nội dung</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr th:each="blog: ${blogList}">
+            <td th:text="${blog.id}"></td>
+            <td th:text="${blog.tittle}"></td>
+            <td>
+                <button class="btn btn-primary" th:onclick="'detail(\'' + ${blog.blogDetail.content}+  '\', \'' + ${blog.tittle}+  '\');'"
+                   data-toggle="modal"
+                   data-target="#detail">
+                    Chi tiết
+                </button>
+            </td>
+            <td>
+                <button class="btn btn-primary" th:onclick="'edit(\'' + ${blog.id}+  '\');'">
+                    Chỉnh sửa
+                </button>
+            </td>
+            <td>
+                <button class="btn btn-primary"  th:onclick="'musicIndex(\'' + ${blog.id}+  '\', \'' + ${blog.tittle}+  '\');'"
+                   data-toggle="modal"
+                   data-target="#delete">
+                    Xóa
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="p-0 m-0" style="width: 10%; float: left">&nbsp;</div>
+
+
+<div class="modal" id="detail">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title w-100 text-center" id="tittle"></h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body" id="content">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark " data-dismiss="modal">Hủy</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="delete">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title w-100 text-center" id="thongBao"></h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark" onclick="musicIndex2()">
+                    <a class="text-white">Xóa</a>
+                </button>
+                <button type="button" class="btn btn-dark " data-dismiss="modal">Hủy</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script src="/resources/jquery/jquery-3.5.1.min.js"></script>
+<script src="/resources/datatables/js/jquery.dataTables.min.js"></script>
+<script src="/resources/datatables/js/dataTables.bootstrap4.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="/resources/bootstrap413/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#tableEmployee').dataTable({
+            "dom": 'lrtip',
+            "lengthChange": false,
+            "pageLength": 3
+        });
+    })
+</script>
+
+<script>
+    var id;
+
+    function detail(content, tittle) {
+        console.log(content)
+        console.log(tittle)
+        document.getElementById("tittle").innerHTML = tittle;
+        document.getElementById("content").innerHTML = content;
+    }
+
+    function musicIndex(index, name) {
+        id = index;
+        document.getElementById("thongBao").innerHTML = "Bạn có muốn xóa blog có tiêu đề " + name;
+    };
+
+    function musicIndex2() {
+        let link = "/delete/" + id;
+        window.location.href = link;
+    };
+
+    function edit(id) {
+        window.location.href = /edit/ + id;
+    };
+</script>
+</html>
