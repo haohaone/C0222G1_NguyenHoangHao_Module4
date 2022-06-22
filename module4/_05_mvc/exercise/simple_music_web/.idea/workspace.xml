@@ -20,84 +20,82 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef78ad02-d54b-43bd-a929-597cd474cbf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/java/com/blog/ApplicationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/java/com/blog/controller/BlogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/java/com/blog/controller/FilterUTF8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/java/com/blog/model/Blog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/java/com/blog/model/BlogDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/java/com/blog/repository/BlogRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/java/com/blog/service/BlogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/WEB-INF/views/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/WEB-INF/views/music-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/bootstrap413/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/css/dataTables.bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/css/dataTables.bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/css/dataTables.bootstrap4.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/css/dataTables.bootstrap4.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/css/dataTables.foundation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/css/dataTables.foundation.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/css/dataTables.jqueryui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/css/dataTables.jqueryui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/css/dataTables.semanticui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/css/dataTables.semanticui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/css/jquery.dataTables.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/css/jquery.dataTables.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/images/sort_asc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/images/sort_asc_disabled.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/images/sort_both.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/images/sort_desc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/images/sort_desc_disabled.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/js/dataTables.bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/js/dataTables.bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/js/dataTables.bootstrap4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/js/dataTables.bootstrap4.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/js/dataTables.foundation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/js/dataTables.foundation.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/js/dataTables.jqueryui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/js/dataTables.jqueryui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/js/dataTables.semanticui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/js/dataTables.semanticui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/js/jquery.dataTables.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/datatables/js/jquery.dataTables.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/boostrap/jquery/jquery-3.5.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/music_mp3/cuong.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/music_mp3/hao.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/music_mp3/oah.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/music_mp3/ptctt.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/music_mp3/trung.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/src/main/webapp/music_mp3/vnkxd.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/java/category/com/exercise_07_category/controller/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/java/category/com/exercise_07_category/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/java/category/com/exercise_07_category/controller/FilterUTF8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/java/category/com/exercise_07_category/model/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/java/category/com/exercise_07_category/model/BlogDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/java/category/com/exercise_07_category/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/java/category/com/exercise_07_category/model/dto/BlogDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/java/category/com/exercise_07_category/model/dto/CategoryDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/java/category/com/exercise_07_category/repository/BlogDetailRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/java/category/com/exercise_07_category/repository/BlogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/java/category/com/exercise_07_category/repository/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/java/category/com/exercise_07_category/service/BlogDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/java/category/com/exercise_07_category/service/BlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/java/category/com/exercise_07_category/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/java/category/com/exercise_07_category/service/imp/BlogDetailServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/java/category/com/exercise_07_category/service/imp/BlogServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/java/category/com/exercise_07_category/service/imp/CategoryServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/bootstrap413/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/bootstrap413/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/bootstrap413/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/bootstrap413/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/bootstrap413/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/bootstrap413/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/bootstrap413/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/bootstrap413/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/bootstrap413/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/bootstrap413/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/bootstrap413/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/bootstrap413/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/bootstrap413/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/bootstrap413/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/bootstrap413/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/bootstrap413/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/bootstrap413/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/bootstrap413/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/bootstrap413/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/bootstrap413/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/css/dataTables.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/css/dataTables.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/css/dataTables.bootstrap4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/css/dataTables.bootstrap4.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/css/dataTables.foundation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/css/dataTables.foundation.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/css/dataTables.jqueryui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/css/dataTables.jqueryui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/css/dataTables.semanticui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/css/dataTables.semanticui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/css/jquery.dataTables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/css/jquery.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/images/sort_asc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/images/sort_asc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/images/sort_both.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/images/sort_desc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/images/sort_desc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/js/dataTables.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/js/dataTables.bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/js/dataTables.bootstrap4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/js/dataTables.bootstrap4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/js/dataTables.foundation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/js/dataTables.foundation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/js/dataTables.jqueryui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/js/dataTables.jqueryui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/js/dataTables.semanticui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/js/dataTables.semanticui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/js/jquery.dataTables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/datatables/js/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/static/boostrap/jquery/jquery-3.5.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/templates/blog-views/blog-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/templates/blog-views/create-blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/templates/blog-views/edit-blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/templates/category-views/category-create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/templates/category-views/category-edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_07_spring_boot/exercise/src/main/resources/templates/category-views/category-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../_06_spring_jpa/exercise/blog/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +136,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../_04_thymeleaf/exercise/product" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -244,6 +242,7 @@
       <updated>1655696429942</updated>
       <workItem from="1655696434677" duration="19270000" />
       <workItem from="1655726507331" duration="5467000" />
+      <workItem from="1655911421443" duration="75000" />
     </task>
     <servers />
   </component>
