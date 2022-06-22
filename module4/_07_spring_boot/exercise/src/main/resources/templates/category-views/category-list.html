@@ -81,14 +81,16 @@
         <tr>
             <td colspan="11">
                 <div>
-                    <span >
-                        <a class=" btn btn-secondary" th:if="${categoryList.hasPrevious()}" th:href="@{/category(page = ${categoryList.number - 1})}">Previous</a>
+                    <span>
+                        <a class=" btn btn-secondary" th:if="${categoryList.hasPrevious()}"
+                           th:href="@{/category(page = ${categoryList.number - 1})}">Previous</a>
                     </span>
                     <span th:each="pageNo: ${#numbers.sequence(0,categoryList.totalPages - 1)}">
                         <a class=" btn btn-secondary" th:href="@{/category(page = ${pageNo})}" th:text="${pageNo}"></a>
-                    </span >
+                    </span>
                     <span>
-                        <a class=" btn btn-secondary" th:if="${categoryList.hasNext()}" th:href="@{/category(page = ${categoryList.number +1})}">Next</a>
+                        <a class=" btn btn-secondary" th:if="${categoryList.hasNext()}"
+                           th:href="@{/category(page = ${categoryList.number +1})}">Next</a>
                     </span>
                 </div>
             </td>

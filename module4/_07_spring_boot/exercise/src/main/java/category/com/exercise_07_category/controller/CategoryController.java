@@ -65,7 +65,7 @@ public class CategoryController {
     @PostMapping("/search-category")
     public String search(@RequestParam("name") String category,
                          @RequestParam(name = "page", required = false, defaultValue = "0") int page,
-                         Model model){
+                         Model model) {
         Sort sort = Sort.by("id").descending();
         Page<Category> categoryList = categoryService.search(category, PageRequest.of(page, 1, sort));
         model.addAttribute("categoryList", categoryList);
