@@ -6,6 +6,7 @@ import category.com.exercise_07_category.model.dto.BlogDTO;
 import category.com.exercise_07_category.service.BlogDetailService;
 import category.com.exercise_07_category.service.BlogService;
 import category.com.exercise_07_category.service.CategoryService;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,6 +25,11 @@ public class BlogController {
     private BlogDetailService blogDetailService;
     @Autowired
     private CategoryService categoryService;
+//Chiến gà
+    @ModelAttribute("categoryList")
+    public List<Category> getListCategory(){
+        return this.categoryService.findAll();
+    }
 
     @GetMapping("/blog")
     public String showBlogList(Model model) {
@@ -41,8 +47,6 @@ public class BlogController {
     @GetMapping("/create-blog")
     public String showCreateForm(Model model) {
         model.addAttribute("blogDTO", new BlogDTO());
-        List<Category> categoryList = categoryService.findAll();
-        model.addAttribute("categoryList", categoryList);
         return "blog-views/create-blog";
     }
 
@@ -55,9 +59,9 @@ public class BlogController {
     @GetMapping("/edit-blog/{id}")
     public String showEditForm(@PathVariable("id") int id, Model model) {
         Blog blog = blogService.findById(id);
-        model.addAttribute("blogDTO", new BlogDTO(blog.getId(), blog.getTittle(), blog.getBlogDetail().getContent()));
-        List<Category> categoryList = categoryService.findAll();
-        model.addAttribute("categoryList", categoryList);
+        BlogDTO blogDTO = new BlogDTO();
+        BeanUtils.copyProperties(blog, blogDTO);
+        model.addAttribute("blogDTO", blogDTO);
         return "blog-views/edit-blog";
     }
 

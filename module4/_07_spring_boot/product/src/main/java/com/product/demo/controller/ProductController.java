@@ -8,8 +8,10 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @Controller
@@ -44,7 +46,10 @@ public class ProductController {
     }
 
     @PostMapping("/create")
-    public String create(@ModelAttribute("product") Product product, Model model){
+    public String create(@Valid @ModelAttribute("product") Product product, BindingResult bindingResult, Model model){
+        if (bindingResult.hasErrors()){
+            return "create";
+        }
         productService.save(product);
         return "redirect:/";
     }
@@ -57,7 +62,10 @@ public class ProductController {
     }
 
     @PostMapping("/edit")
-    public String edit(@ModelAttribute("product") Product product, Model model){
+    public String edit(@Valid @ModelAttribute("product") Product product, BindingResult bindingResult, Model model){
+        if (bindingResult.hasErrors()){
+            return "create";
+        }
         productService.edit(product);
         return "redirect:/";
     }

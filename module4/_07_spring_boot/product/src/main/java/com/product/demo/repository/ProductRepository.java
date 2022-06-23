@@ -31,7 +31,7 @@ public interface ProductRepository extends JpaRepository<Product, Integer> {
             " producer = :producer WHERE id = :id", nativeQuery = true)
     void edit(@Param("id") String id,
               @Param("name") String name,
-              @Param("price") double price,
+              @Param("price") String price,
               @Param("productDescription") String description,
               @Param("producer") String producer);
 

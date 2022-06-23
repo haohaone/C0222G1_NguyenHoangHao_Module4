@@ -1,6 +1,10 @@
 package category.com.exercise_07_category.model.dto;
 
 public class BlogDTO {
+//    int getId();
+//    String getTittle();
+//    String getContent();
+//    int getCategory();
     private Integer id;
     private String tittle;
     private String content;
