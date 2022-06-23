@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Thêm mới người dùng</title>
+    <link rel="stylesheet" href="/resources/bootstrap413/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/resources/datatables/css/dataTables.bootstrap4.min.css"/>
+    <style>
+        .center-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .head-text {
+            font-size: 30px;
+            font-weight: bold;
+            height: 10%;
+        }
+
+        .footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body class="bg-dark">
+<div class="container">
+    <div class=" bg-white">
+        <div class="h1 center-box m-0">Thêm mới người dùng</div>
+        <form action="/" th:object="${user}" method="post" class="p-3">
+
+            <div class="form-group">
+                <label>Nhập họ người dùng:</label>
+                <input th:field="*{firstName}" type="text" class="form-control">
+                <label class="text-danger" th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"></label>
+            </div>
+
+            <div class="form-group">
+                <label>Nhập tên người dùng:</label>
+                <input th:field="*{lastName}" type="text" class="form-control">
+                <label class="text-danger" th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"></label>
+            </div>
+
+            <div class="form-group">
+                <label>Nhập tuổi người dùng:</label>
+                <input th:field="*{age}" type="text" class="form-control">
+                <label class="text-danger" th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></label>
+            </div>
+
+            <div class="form-group">
+                <label>Nhập gmail:</label>
+                <input th:field="*{gmail}" type="text" class="form-control">
+                <label class="text-danger" th:if="${#fields.hasErrors('gmail')}" th:errors="*{gmail}"></label>
+            </div>
+
+            <div class="form-group">
+                <label>Nhập số điện thoại:</label>
+                <input th:field="*{phone}" type="text" class="form-control">
+                <label class="text-danger" th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}"></label>
+            </div>
+            <button type="submit" class="btn btn-dark w-100">Submit</button>
+        </form>
+    </div>
+</div>
+</body>
+<script src="/resources/jquery/jquery-3.5.1.min.js"></script>
+<script src="/resources/datatables/js/jquery.dataTables.min.js"></script>
+<script src="/resources/datatables/js/dataTables.bootstrap4.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="/resources/bootstrap413/js/bootstrap.bundle.min.js"></script>
+</html>
