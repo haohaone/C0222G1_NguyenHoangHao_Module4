@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Chỉnh sửa khách hàng</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="/resources/bootstrap413/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/bootstrap413/css/login.css}"/>
+    <style>
+        .bg {
+            background-image: url(/bootstrap/bootstrap413/css/furama2.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body class="h-100 w-100 bg">
+<div class="container-fluid w-100 h-100 p-0 m-0">
+    <div class="row w-100 h-100 p-0 m-0" style="overflow: auto">
+        <div class="col-md-4 p-0 m-0 "></div>
+        <div class="col-md-4 p-0 m-0 login">
+            <div class="h-100 w-100 bg-white p-0 m-0 ">
+                <div class=" login">
+                    <img src="https://furamavietnam.com/wp-content/uploads/2018/08/logo.png"
+                         class="logo">
+                    <div class="text-primary title">Chỉnh sửa khách hàng</div>
+                </div>
+                <form action="/customer/edit" th:object="${customerEditDto}" method="post">
+                    <div class="p-3">
+                        <input type="hidden" th:field="${customerEditDto.customerId}" class="form-control border-primary text-dark">
+                        <div class="form-group">
+                            <label>Loại khách hàng</label>
+                            <select th:field="${customerEditDto.customerTypeId}"
+                                    class="form-control custom-select border-primary">
+                                <option th:each="customerType: ${customerTypeList}"
+                                        th:value="${customerType.customerTypeId}"
+                                        th:text="${customerType.customerTypeName}">
+                                </option>
+                            </select>
+                            <label class="text-danger"
+                                   th:if="${#fields.hasErrors('customerTypeId')}"
+                                   th:errors="*{customerTypeId}">
+                            </label>
+                        </div>
+                        <div class="form-group ">
+                            <label>Tên khách hàng</label>
+                            <input th:field="${customerEditDto.customerName}" class="form-control border-primary text-dark">
+                            <label class="text-danger"
+                                   th:if="${#fields.hasErrors('customerName')}"
+                                   th:errors="*{customerName}">
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>Giới tính</label>
+                            <select th:field="${customerEditDto.customerGender}"
+                                    class="form-control custom-select border-primary">>
+                                <option selected value=1>Nam</option>
+                                <option value=0>Nữ</option>
+                            </select>
+                        </div>
+                        <div class="form-group ">
+                            <label>Ngày sinh</label>
+                            <input type="date" th:field="${customerEditDto.customerBirthDay}"
+                                   class="form-control border-primary text-dark"
+                                   name="birthDay">
+                            <label class="text-danger"
+                                   th:if="${#fields.hasErrors('customerBirthDay')}"
+                                   th:errors="*{customerBirthDay}">
+                            </label>
+                        </div>
+                        <div class="form-group ">
+                            <label>Số chứng minh thư</label>
+                            <input th:field="${customerEditDto.customerIdCard}"
+                                   class="form-control border-primary text-dark"
+                                   name="idCard">
+                            <label class="text-danger"
+                                   th:if="${#fields.hasErrors('customerIdCard')}"
+                                   th:errors="*{customerIdCard}">
+                            </label>
+                        </div>
+                        <div class="form-group ">
+                            <label>Số điện thoại</label>
+                            <input th:field="${customerEditDto.customerPhone}"
+                                   class="form-control border-primary text-dark"
+                                   name="phone">
+                            <label class="text-danger"
+                                   th:if="${#fields.hasErrors('customerPhone')}"
+                                   th:errors="*{customerPhone}">
+                            </label>
+                        </div>
+
+                        <div class="form-group ">
+                            <label>Email</label>
+                            <input th:field="${customerEditDto.customerEmail}"
+                                   class="form-control border-primary text-dark"
+                                   name="email">
+                            <label class="text-danger"
+                                   th:if="${#fields.hasErrors('customerEmail')}"
+                                   th:errors="*{customerEmail}">
+                            </label>
+                        </div>
+                        <div class="form-group ">
+                            <label>Địa chỉ</label>
+                            <input th:field="${customerEditDto.customerAddress}"
+                                   class="form-control border-primary text-dark"
+                                   name="address">
+                            <label class="text-danger"
+                                   th:if="${#fields.hasErrors('customerAddress')}"
+                                   th:errors="*{customerAddress}">
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Chỉnh sửa</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4  p-0 m-0"></div>
+    </div>
+</div>
+</body>
+<script src="/resources/jquery/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="/resources/bootstrap413/js/bootstrap.bundle.min.js"></script>
+</html>

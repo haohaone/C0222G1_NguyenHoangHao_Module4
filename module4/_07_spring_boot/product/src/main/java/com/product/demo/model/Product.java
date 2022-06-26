@@ -19,7 +19,7 @@ public class Product {
     @Column(columnDefinition = "DOUBLE")
     @CheckDoubleConstraint
     private String price;
-
+    
     @Column(name = "product_description")
     @NotEmpty(message = "Không được để trống")
     private String productDescription;
