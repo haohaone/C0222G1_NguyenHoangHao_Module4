@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Danh sách nhân viên</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="/resources/bootstrap413/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/resources/datatables/css/dataTables.bootstrap4.min.css"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/bootstrap413/css/furama.css}"/>
+    <style>
+        .bg {
+            background-image: url(/bootstrap/bootstrap413/css/furama2.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class=" w-100 bg" style="overflow: hidden">
+<nav class="navbar bg-white m-0 p-0" id="head">
+    <div class="row col-md-12 h-100 m-0 p-0">
+        <div class="col-md-2 m-0 p-0 center-box home">
+            <a href="/home">
+                <img src="https://furamavietnam.com/wp-content/uploads/2018/08/logo.png" class="logo">
+            </a>
+        </div>
+        <div class=" col-md-8 h-100 p-0 p-0 center-box home">
+            Danh sách nhân viên
+        </div>
+        <div class=" col-md-2 center-box home">
+            &nbsp;
+        </div>
+    </div>
+</nav>
+
+<div class="row m-0 p-0  h-100 w-100 m-5">
+    <div class="col-md-1 m-0 h-100  p-0 center-box">&nbsp;</div>
+    <div class="col-md-10 h-100 m-0 p-0 center-box">
+        <div class=" bg-white center-box">
+            <table class="table border-0 text-center table-hover bg-white" id="tableEmployee">
+                <tr>
+                    <td colspan="11" class="text-primary border-0">
+                        <div class="row w-100">
+                            <div class="col-md-6">
+                                <a href="/employee/create" class="font-weight-bold">
+                                    Thêm nhân viên
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" data-toggle="modal" data-target="#SearchByName"
+                                   class="font-weight-bold">
+                                    Tìm kiếm nhân viên
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="11" th:if="${msg != null}">
+                        <div class="text-danger font-weight-bold" th:text="${msg}"></div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>No.</th>
+                    <th>Tên Nhân Viên</th>
+                    <th>Ngày sinh</th>
+                    <th>SĐT</th>
+                    <th>Địa chỉ</th>
+                    <th>Lương</th>
+                    <th>Chức vụ</th>
+                    <th>Bộ phận</th>
+                    <th>Học vấn</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr th:each="employee: ${employeeList}">
+                    <td th:text="${employee.employeeId}"></td>
+                    <td th:text="${employee.employeeName}"></td>
+                    <td th:text="${employee.employeeBirthDay}"></td>
+                    <td th:text="${employee.employeePhone}"></td>
+                    <td th:text="${employee.employeePhone}"></td>
+                    <td th:text="${employee.employeeSalary}"></td>
+                    <td th:text="${employee.division.divisionName}"></td>
+                    <td th:text="${employee.position.positionName}"></td>
+                    <td th:text="${employee.educationDegree.educationDegreeName}"></td>
+                    <td>
+                        <a th:href="@{/employee/edit/{id}(id = ${employee.employeeId})}">Edit</a>
+                    </td>
+                    <td>
+                        <a href="#" th:attr="onclick=|employeeIndex('${employee.employeeId}', '${employee.employeeName}')|" data-toggle="modal"
+                           data-target="#delete">
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+                <td colspan="11">
+                    <div>
+                    <span>
+                        <a class=" btn btn-secondary" th:if="${employeeList.hasPrevious()}"
+                           th:href="@{/employee(page = ${employeeList.number - 1})}">Previous</a>
+                    </span>
+                        <span th:each="pageNo: ${#numbers.sequence(0,employeeList.totalPages - 1)}">
+                        <a class=" btn btn-secondary" th:href="@{/employee(page = ${pageNo})}" th:text="${pageNo}"></a>
+                    </span>
+                        <span>
+                        <a class=" btn btn-secondary" th:if="${employeeList.hasNext()}"
+                           th:href="@{/emloyee(page = ${employeeList.number +1})}">Next</a>
+                    </span>
+                    </div>
+                </td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-md-1 m-0 p-0">&nbsp;</div>
+</div>
+</div>
+
+<div class="modal" id="delete">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title w-100 text-center" id="confirm"></h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark" onclick="employeeIndex2()">
+                    <a class="text-white">Xóa</a>
+                </button>
+                <button type="button" class="btn btn-dark " data-dismiss="modal">Hủy</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="SearchByName">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header w-100">
+                <div class="w-100 center-box">
+                    <form method="post" action="/employee/search"
+                          class="form-inline my-2 my-lg-0 w-100 center-box">
+                        <div class="row p-1 rounded rounded-pill w-100  center-box">
+                            <div class="col-md-12 input-group center-box shadow-sm bg-light w-100 p-0">
+                                <input type="search" placeholder="Tên nhân viên" aria-describedby="button-addon1"
+                                       class="form-control border-0 w-75 bg-light "
+                                       name="name">
+                                <div class="input-group-append bg-light w-25">
+                                    <button id="button-addon1" type="submit"
+                                            class="btn bg-light btn-link text-primary w-100">
+                                        <i class="bi bi-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="/resources/jquery/jquery-3.5.1.min.js"></script>
+<script src="/resources/datatables/js/jquery.dataTables.min.js"></script>
+<script src="/resources/datatables/js/dataTables.bootstrap4.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="/resources/bootstrap413/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    var id;
+
+    function employeeIndex(index, name) {
+        document.getElementById("confirm").innerHTML = "Bạn có muốn xóa nhân viên <br>" + "Có tên là " + name;
+        id = index;
+    };
+
+    function employeeIndex2() {
+        let link = "/employee/delete/" + id;
+        window.location.href = link;
+    };
+</script>
+</html>

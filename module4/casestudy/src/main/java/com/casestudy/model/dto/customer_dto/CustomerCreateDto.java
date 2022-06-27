@@ -1,5 +1,6 @@
 package com.casestudy.model.dto.customer_dto;
 
+import com.casestudy.utils.CheckAge18Constraint;
 import com.casestudy.utils.CheckCustomerId;
 import com.casestudy.utils.CheckIntegerConstraint;
 
@@ -18,6 +19,7 @@ public class CustomerCreateDto {
     @NotEmpty(message = "Tên khách hàng không được để trống")
     private String customerName;
 
+    @CheckAge18Constraint
     @NotEmpty(message = "Ngày sinh khách hàng không được để trống")
     private String customerBirthDay;
 

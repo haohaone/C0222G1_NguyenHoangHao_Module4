@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Tạo mới nhân viên</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="/resources/bootstrap413/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/bootstrap413/css/login.css}"/>
+    <style>
+        .bg {
+            background-image: url(/bootstrap/bootstrap413/css/furama2.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body class="h-100 w-100 bg">
+<div class="container-fluid w-100 h-100 p-0 m-0">
+    <div class="row w-100 h-100 p-0 m-0" style="overflow: auto">
+        <div class="col-md-4 p-0 m-0 "></div>
+        <div class="col-md-4 p-0 m-0 login">
+            <div class="h-100 w-100 bg-white p-0 m-0 ">
+                <div class=" login">
+                    <img src="https://furamavietnam.com/wp-content/uploads/2018/08/logo.png"
+                         class="logo">
+                    <div class="text-primary title">Tạo mới nhân viên</div>
+                </div>
+                <form action="/employee/create" th:object="${employeeCreateDto}" method="post">
+                    <div class="p-3">
+                        <div class="form-group ">
+                            <label>Tên nhân viên</label>
+                            <input th:field="${employeeCreateDto.employeeName}"
+                                   class="form-control border-primary text-dark">
+                            <label class="text-danger"
+                                   th:if="${#fields.hasErrors('employeeName')}"
+                                   th:errors="*{employeeName}">
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>Ngày sinh</label>
+                            <input th:field="${employeeCreateDto.employeeBirthDay}" type="date"
+                                   class="form-control border-primary text-dark">
+                            <label class="text-danger"
+                                   th:if="${#fields.hasErrors('employeeBirthDay')}"
+                                   th:errors="*{employeeBirthDay}">
+                            </label>
+                        </div>
+                        <div class="form-group ">
+                            <label>Mã chứng minh nhân dân</label>
+                            <input th:field="${employeeCreateDto.employeeIdCard}"
+                                   class="form-control border-primary text-dark">
+                            <label class="text-danger"
+                                   th:if="${#fields.hasErrors('employeeIdCard')}"
+                                   th:errors="*{employeeCreateDto}">
+                            </label>
+                        </div>
+                        <div class="form-group ">
+                            <label>Lương nhân viên</label>
+                            <input th:field="${employeeCreateDto.employeeSalary}"
+                                   class="form-control border-primary text-dark">
+                            <label class="text-danger"
+                                   th:if="${#fields.hasErrors('employeeSalary')}"
+                                   th:errors="*{employeeSalary}">
+                            </label>
+                        </div>
+                        <div class="form-group ">
+                            <label>Số điện thoại</label>
+                            <input th:field="${employeeCreateDto.employeePhone}"
+                                   class="form-control border-primary text-dark">
+                            <label class="text-danger"
+                                   th:if="${#fields.hasErrors('employeePhone')}"
+                                   th:errors="*{employeePhone}">
+                            </label>
+                        </div>
+
+                        <div class="form-group ">
+                            <label>Email</label>
+                            <input th:field="${employeeCreateDto.employeeEmail}"
+                                   class="form-control border-primary text-dark">
+                            <label class="text-danger"
+                                   th:if="${#fields.hasErrors('employeeEmail')}"
+                                   th:errors="*{employeeEmail}">
+                            </label>
+                        </div>
+                        <div class="form-group ">
+                            <label>Địa chỉ</label>
+                            <input th:field="${employeeCreateDto.employeeAddress}"
+                                   class="form-control border-primary text-dark">
+                            <label class="text-danger"
+                                   th:if="${#fields.hasErrors('employeeAddress')}"
+                                   th:errors="*{employeeAddress}">
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>Chức vụ</label>
+                            <select th:field="${employeeCreateDto.positionId}"
+                                    class="form-control custom-select border-primary">
+                                <option th:each="position: ${positionList}"
+                                        th:value="${position.positionId}"
+                                        th:text="${position.positionName}">
+                                </option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Bộ phận</label>
+                            <select th:field="${employeeCreateDto.divisionId}"
+                                    class="form-control custom-select border-primary">
+                                <option th:each="division: ${divisionList}"
+                                        th:value="${division.divisionId}"
+                                        th:text="${division.divisionName}">
+                                </option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Học vấn</label>
+                            <select th:field="${employeeCreateDto.educationDegreeId}"
+                                    class="form-control custom-select border-primary">
+                                <option th:each="educationDegree: ${educationDegreeList}"
+                                        th:value="${educationDegree.educationDegreeId}"
+                                        th:text="${educationDegree.educationDegreeName}">
+                                </option>
+                            </select>
+                        </div>
+                        <div class="form-group ">
+                            <label>Địa chỉ</label>
+                            <input th:field="${employeeCreateDto.userName}"
+                                   class="form-control border-primary text-dark">
+                            <label class="text-danger"
+                                   th:if="${#fields.hasErrors('userName')}"
+                                   th:errors="*{userName}">
+                            </label>
+                        </div>
+                        <div class="form-group ">
+                            <label>Địa chỉ</label>
+                            <input th:field="${employeeCreateDto.password}"
+                                   class="form-control border-primary text-dark"
+                                   type="password">
+                            <label class="text-danger"
+                                   th:if="${#fields.hasErrors('password')}"
+                                   th:errors="*{password}">
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Thêm mới</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4  p-0 m-0"></div>
+    </div>
+</div>
+</body>
+<script src="/resources/jquery/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="/resources/bootstrap413/js/bootstrap.bundle.min.js"></script>
+</html>

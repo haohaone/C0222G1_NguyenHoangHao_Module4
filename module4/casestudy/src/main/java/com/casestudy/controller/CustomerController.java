@@ -18,6 +18,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import javax.validation.Valid;
 
 @Controller
+@RequestMapping("/customer")
 public class CustomerController {
     @Autowired
     private CustomerTypeService customerTypeService;
@@ -25,21 +26,21 @@ public class CustomerController {
     @Autowired
     private CustomerService customerService;
 
-    @GetMapping("/customer")
+    @GetMapping("")
     public String showCustomerList(@RequestParam(name = "page", defaultValue = "0") int page, Model model) {
         Page<Customer> customerList = customerService.findAll(PageRequest.of(page, 4));
         model.addAttribute("customerList", customerList);
         return "views/customer/customer-list";
     }
 
-    @GetMapping("/customer/delete/{id}")
+    @GetMapping("/delete/{id}")
     public String delete(@PathVariable(name = "id") String id, RedirectAttributes redirectAttributes) {
         customerService.delete(id);
         redirectAttributes.addFlashAttribute("msg", "Xóa thành công");
         return "redirect:/customer";
     }
 
-    @PostMapping("/customer/search")
+    @PostMapping("/search")
     public String search(@RequestParam(name = "name") String name,
                          @RequestParam(name = "page", defaultValue = "0") int page,
                          Model model) {
@@ -48,14 +49,14 @@ public class CustomerController {
         return "views/customer/customer-list";
     }
 
-    @GetMapping("/customer/create")
+    @GetMapping("/create")
     public String showCreateForm(Model model) {
         model.addAttribute("customerCreateDto", new CustomerCreateDto());
         model.addAttribute("customerTypeList", customerTypeService.findAll());
         return "views/customer/create-list";
     }
 
-    @PostMapping("/customer/create")
+    @PostMapping("/create")
     public String create(@Valid @ModelAttribute("customerCreateDto") CustomerCreateDto customerCreateDTO,
                          BindingResult bindingResult,
                          RedirectAttributes redirectAttributes,
@@ -81,7 +82,7 @@ public class CustomerController {
         return "redirect:/customer";
     }
 
-    @GetMapping("/customer/edit/{id}")
+    @GetMapping("/edit/{id}")
     public String showEditForm(@PathVariable("id") String id, Model model) {
         Customer customer = customerService.findById(id);
         CustomerEditDto customerEditDto = new CustomerEditDto(customer.getCustomerId(),
@@ -98,7 +99,7 @@ public class CustomerController {
         return "views/customer/edit-list";
     }
 
-    @PostMapping("/customer/edit")
+    @PostMapping("/edit")
     public String edit(@Valid @ModelAttribute("customerEditDto") CustomerEditDto customerEditDto,
                        BindingResult bindingResult,
                        RedirectAttributes redirectAttributes,

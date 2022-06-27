@@ -1,11 +1,42 @@
 package com.casestudy.service.imp.employee;
 
+import com.casestudy.model.employee.Employee;
+import com.casestudy.repository.furama_interface.employee.EmployeeRepository;
 import com.casestudy.service.furama_interface.employee.EmployeeService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
 
+@Service
 public class EmployeeServiceImp implements EmployeeService {
-    private static final String ACCOUNT_REGEX = "^[a-z0-9]{6,}@furama.com$",
-            PHONE_REGEX = "^((090[0-9]{7})|(091[0-9]{7})|(\\(84\\)\\+90[0-9]{7})|(\\(84\\)\\+91[0-9]{7}))$",
-            EMAIL_REGEX = "^([a-z0-9]{6,}@[a-z]+(.[a-z]+)+)$",
-            CMND_REGEX = "^[0-9]{9}$";;
+    @Autowired
+    private EmployeeRepository employeeRepository;
 
+    @Override
+    public Page<Employee> findAll(Pageable p) {
+        return employeeRepository.findAllEmployee(p);
+    }
+
+    @Override
+    public Employee findById(int id) {
+        return employeeRepository.findByEmployeeId(id);
+    }
+
+    @Override
+    public void delete(int employeeId) {
+        Employee employee = employeeRepository.findByEmployeeId(employeeId);
+        employee.setStatusDelete(1);
+        employeeRepository.save(employee);
+    }
+
+    @Override
+    public void save(Employee employee) {
+        employeeRepository.save(employee);
+    }
+
+    @Override
+    public Page<Employee> findByEmployeeName(String name, Pageable p) {
+        return employeeRepository.findByEmployeeNameContains(name, p);
+    }
 }

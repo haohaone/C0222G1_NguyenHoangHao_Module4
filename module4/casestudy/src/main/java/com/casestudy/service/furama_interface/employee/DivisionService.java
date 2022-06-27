@@ -1,5 +1,11 @@
 package com.casestudy.service.furama_interface.employee;
 
-public interface DivisionService {
+import com.casestudy.model.employee.Division;
 
+import java.util.List;
+
+public interface DivisionService {
+    List<Division> findAll();
+
+    Division findById(int id);
 }
