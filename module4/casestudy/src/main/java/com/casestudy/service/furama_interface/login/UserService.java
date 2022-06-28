@@ -10,4 +10,6 @@ public interface UserService {
     User findById(String username);
 
     void save(User user);
+
+    void saveUserRole(int id, String name);
 }

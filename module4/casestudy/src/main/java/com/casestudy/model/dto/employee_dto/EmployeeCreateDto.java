@@ -20,8 +20,8 @@ public class EmployeeCreateDto {
     @Pattern(regexp = "^[0-9]{9}$", message = "CMND phải đủ 9 số")
     private String employeeIdCard;
 
-    @CheckDoubleConstraint(message = "Lươngg nhân viên không được nhập số và phải lớn hơn 0")
-    private Double employeeSalary;
+    @CheckDoubleConstraint(message = "Lương nhân viên không được nhập số và phải lớn hơn 0")
+    private String employeeSalary;
 
     @Pattern(regexp = "^((090[0-9]{7})|(091[0-9]{7})|(\\(84\\)\\+90[0-9]{7})|(\\(84\\)\\+91[0-9]{7}))$",
             message = "Nhập sai định dạng SĐT 090-xxxxxxx 091-xxxxxxx (84)+90xxxxxxx (84)+91xxxxxxx")
@@ -43,13 +43,15 @@ public class EmployeeCreateDto {
     @Pattern(regexp = "^[\\S]{6,}$", message = "Mật khẩu quá ngắn")
     private String password;
 
+    private Integer roleId;
+
     public EmployeeCreateDto() {
     }
 
     public EmployeeCreateDto(Integer employeeId, @NotEmpty(message = "Tên nhân viên không được để trống") String employeeName,
                              @NotEmpty(message = "Ngày sinh khách hàng không được để trống") String employeeBirthDay,
                              @Pattern(regexp = "^[0-9]{9}$", message = "CMND phải đủ 9 số") String employeeIdCard,
-                             Double employeeSalary,
+                             String employeeSalary,
                              @Pattern(regexp = "^((090[0-9]{7})|(091[0-9]{7})|(\\(84\\)\\+90[0-9]{7})|(\\(84\\)\\+91[0-9]{7}))$",
                                      message = "Nhập sai định dạng SĐT 090-xxxxxxx 091-xxxxxxx (84)+90xxxxxxx (84)+91xxxxxxx") String employeePhone,
                              @Pattern(regexp = "^([a-z0-9]{6,}@[a-z]+(.[a-z]+)+)$", message = "Nhập sai định dạng email") String employeeEmail,
@@ -58,7 +60,8 @@ public class EmployeeCreateDto {
                              Integer educationDegreeId,
                              Integer divisionId,
                              @Pattern(regexp = "^[a-z0-9]{6,}@furama.com$", message = "Nhập sai định dạng tài khoản VD: abc123@furama.com") String userName,
-                             @Pattern(regexp = "^[\\S]{6,}$", message = "Mật khẩu quá ngắn") String password) {
+                             @Pattern(regexp = "^[\\S]{6,}$", message = "Mật khẩu quá ngắn") String password,
+                             Integer roleId) {
         this.employeeId = employeeId;
         this.employeeName = employeeName;
         this.employeeBirthDay = employeeBirthDay;
@@ -72,6 +75,15 @@ public class EmployeeCreateDto {
         this.divisionId = divisionId;
         this.userName = userName;
         this.password = password;
+        this.roleId = roleId;
+    }
+
+    public Integer getRoleId() {
+        return roleId;
+    }
+
+    public void setRoleId(Integer roleId) {
+        this.roleId = roleId;
     }
 
     public Integer getEmployeeId() {
@@ -106,11 +118,11 @@ public class EmployeeCreateDto {
         this.employeeIdCard = employeeIdCard;
     }
 
-    public Double getEmployeeSalary() {
+    public String getEmployeeSalary() {
         return employeeSalary;
     }
 
-    public void setEmployeeSalary(Double employeeSalary) {
+    public void setEmployeeSalary(String employeeSalary) {
         this.employeeSalary = employeeSalary;
     }
 

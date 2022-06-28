@@ -26,4 +26,9 @@ public class UserServiceImp implements UserService {
     public void save(User user) {
         userRepository.save(user);
     }
+
+    @Override
+    public void saveUserRole(int id, String name) {
+        userRepository.saveUserRole(id, name);
+    }
 }

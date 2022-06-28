@@ -10,6 +10,7 @@ import com.casestudy.service.furama_interface.employee.DivisionService;
 import com.casestudy.service.furama_interface.employee.EducationDegreeService;
 import com.casestudy.service.furama_interface.employee.EmployeeService;
 import com.casestudy.service.furama_interface.employee.PositionService;
+import com.casestudy.service.furama_interface.login.RoleService;
 import com.casestudy.service.furama_interface.login.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -35,6 +36,8 @@ public class EmployeeController {
     private EducationDegreeService educationDegreeService;
     @Autowired
     private UserService userService;
+    @Autowired
+    private RoleService roleService;
 
     @GetMapping("")
     public String showEmployeeList(@RequestParam(name = "page", defaultValue = "0") int page, Model model) {
@@ -65,6 +68,7 @@ public class EmployeeController {
         model.addAttribute("divisionList", divisionService.findAll());
         model.addAttribute("positionList", positionService.findAll());
         model.addAttribute("educationDegreeList", educationDegreeService.findAll());
+        model.addAttribute("roleList", roleService.findAll());
         return "views/employee/create-list";
     }
 
@@ -77,6 +81,7 @@ public class EmployeeController {
             model.addAttribute("divisionList", divisionService.findAll());
             model.addAttribute("positionList", positionService.findAll());
             model.addAttribute("educationDegreeList", educationDegreeService.findAll());
+            model.addAttribute("roleList", roleService.findAll());
             return "views/employee/create-list";
         }
 
@@ -88,7 +93,7 @@ public class EmployeeController {
                 employeeCreateDto.getEmployeeName(),
                 employeeCreateDto.getEmployeeBirthDay(),
                 employeeCreateDto.getEmployeeIdCard(),
-                employeeCreateDto.getEmployeeSalary(),
+                Double.parseDouble(employeeCreateDto.getEmployeeSalary()),
                 employeeCreateDto.getEmployeePhone(),
                 employeeCreateDto.getEmployeeEmail(),
                 employeeCreateDto.getEmployeeAddress(),
@@ -97,7 +102,8 @@ public class EmployeeController {
                 division,
                 user,
                 0);
-        userService.save(new User(employeeCreateDto.));
+        userService.save(user);
+        userService.saveUserRole(employeeCreateDto.getRoleId(), employeeCreateDto.getUserName());
         employeeService.save(employee);
         redirectAttributes.addFlashAttribute("msg", "Thêm mới thành công");
         return "redirect:/employee";

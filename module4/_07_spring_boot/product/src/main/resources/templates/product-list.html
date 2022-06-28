@@ -57,27 +57,28 @@
             <th>Edit</th>
             <th>Delete</th>
         </tr>
-
-        <tr th:each="product, status: ${productList}">
-            <td th:text="${status.count}"></td>
-            <td th:text="${product.id}"></td>
-            <td th:text="${product.name}"></td>
-            <td th:text="${product.price}"></td>
-            <td th:text="${product.productDescription}"></td>
-            <td th:text="${product.producer}"></td>
-            <td>
-                <button class="btn btn-primary" th:attr="onclick=|editProduct('${product.id}')|">
-                    Edit
-                </button>
-            </td>
-            <td>
-                <button class="btn btn-primary" th:attr="onclick=|cinemaIndex('${product.id}')|"
-                   data-toggle="modal"
-                   data-target="#delete">
-                    Delete
-                </button>
-            </td>
-        </tr>
+        <th:block th:each="product, status: ${productList}">
+            <tr>
+                <td th:text="${status.count}"></td>
+                <td th:text="${product.id}"></td>
+                <td th:text="${product.name}"></td>
+                <td th:text="${product.price}"></td>
+                <td th:text="${product.productDescription}"></td>
+                <td th:text="${product.producer}"></td>
+                <td>
+                    <button class="btn btn-primary" th:attr="onclick=|editProduct('${product.id}')|">
+                        Edit
+                    </button>
+                </td>
+                <td>
+                    <button class="btn btn-primary" th:attr="onclick=|cinemaIndex('${product.id}')|"
+                            data-toggle="modal"
+                            data-target="#delete">
+                        Delete
+                    </button>
+                </td>
+            </tr>
+        </th:block>
         <tr>
             <td colspan="8">
                 <div>

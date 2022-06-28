@@ -28,11 +28,9 @@ public class User {
     public User() {
     }
 
-    public User(String username, String password, Set<Role> roleList, Employee employee) {
+    public User(String username, String password) {
         this.username = username;
         this.password = password;
-        this.roleList = roleList;
-        this.employee = employee;
     }
 
     public Employee getEmployee() {
