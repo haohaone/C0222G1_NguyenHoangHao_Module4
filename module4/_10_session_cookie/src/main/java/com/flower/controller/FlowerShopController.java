@@ -9,7 +9,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -44,15 +43,15 @@ public class FlowerShopController {
                       RedirectAttributes redirectAttributes) {
         Flower flower = flowerService.findByID(id);
         boolean flag = false;
-        for (Map.Entry<Flower, Integer> entry: flowerList.entrySet()){
-            if (entry.getKey().getId() == id){
+        for (Map.Entry<Flower, Integer> entry : flowerList.entrySet()) {
+            if (entry.getKey().getId() == id) {
                 entry.setValue(entry.getValue() + 1);
                 flag = true;
                 break;
             }
         }
-        if (!flag){
-            flowerList.put(flower,  1);
+        if (!flag) {
+            flowerList.put(flower, 1);
         }
         redirectAttributes.addFlashAttribute("msg", "Thêm vào giỏ hàng thành công");
         return "redirect:/";
@@ -62,7 +61,7 @@ public class FlowerShopController {
     public String orderList(@ModelAttribute("orderList") Map<Flower, Integer> flowerList, Model model) {
         model.addAttribute("flowerList", flowerList);
         int total = 0;
-        for (Map.Entry<Flower, Integer> entry: flowerList.entrySet()){
+        for (Map.Entry<Flower, Integer> entry : flowerList.entrySet()) {
             total += entry.getKey().getPrice() * entry.getValue();
         }
         model.addAttribute("total", total);
@@ -71,10 +70,10 @@ public class FlowerShopController {
 
     @GetMapping("/delete/{id}")
     public String delete(@PathVariable("id") int id,
-                         @ModelAttribute("orderList") Map<Flower, Integer> flowerList){
+                         @ModelAttribute("orderList") Map<Flower, Integer> flowerList) {
         Flower flower = null;
-        for (Map.Entry<Flower, Integer> entry: flowerList.entrySet()){
-            if (entry.getKey().getId() == id){
+        for (Map.Entry<Flower, Integer> entry : flowerList.entrySet()) {
+            if (entry.getKey().getId() == id) {
                 flower = entry.getKey();
                 break;
             }
