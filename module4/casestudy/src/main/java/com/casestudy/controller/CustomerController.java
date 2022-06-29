@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @Controller
 @RequestMapping("/customer")
@@ -25,6 +26,11 @@ public class CustomerController {
 
     @Autowired
     private CustomerService customerService;
+
+    @ModelAttribute("customerTypeList")
+    public List<CustomerType> customerTypeList(){
+        return customerTypeService.findAll();
+    }
 
     @GetMapping("")
     public String showCustomerList(@RequestParam(name = "page", defaultValue = "0") int page, Model model) {
@@ -52,17 +58,14 @@ public class CustomerController {
     @GetMapping("/create")
     public String showCreateForm(Model model) {
         model.addAttribute("customerCreateDto", new CustomerCreateDto());
-        model.addAttribute("customerTypeList", customerTypeService.findAll());
         return "views/customer/create-list";
     }
 
     @PostMapping("/create")
     public String create(@Valid @ModelAttribute("customerCreateDto") CustomerCreateDto customerCreateDTO,
                          BindingResult bindingResult,
-                         RedirectAttributes redirectAttributes,
-                         Model model) {
+                         RedirectAttributes redirectAttributes) {
         if (bindingResult.hasErrors()) {
-            model.addAttribute("customerTypeList", customerTypeService.findAll());
             return "views/customer/create-list";
         }
 
@@ -76,7 +79,7 @@ public class CustomerController {
                 customerCreateDTO.getCustomerIdCard(),
                 customerCreateDTO.getCustomerPhone(),
                 customerCreateDTO.getCustomerEmail(),
-                customerCreateDTO.getCustomerAddress(), 0);
+                customerCreateDTO.getCustomerAddress());
         customerService.save(customer);
         redirectAttributes.addFlashAttribute("msg", "Thêm mới thành công");
         return "redirect:/customer";
@@ -95,17 +98,14 @@ public class CustomerController {
                 customer.getCustomerAddress(),
                 customer.getCustomerGender());
         model.addAttribute("customerEditDto", customerEditDto);
-        model.addAttribute("customerTypeList", customerTypeService.findAll());
         return "views/customer/edit-list";
     }
 
     @PostMapping("/edit")
     public String edit(@Valid @ModelAttribute("customerEditDto") CustomerEditDto customerEditDto,
                        BindingResult bindingResult,
-                       RedirectAttributes redirectAttributes,
-                       Model model) {
+                       RedirectAttributes redirectAttributes) {
         if (bindingResult.hasErrors()) {
-            model.addAttribute("customerTypeList", customerTypeService.findAll());
             return "views/customer/edit-list";
         }
 
@@ -119,7 +119,7 @@ public class CustomerController {
                 customerEditDto.getCustomerIdCard(),
                 customerEditDto.getCustomerPhone(),
                 customerEditDto.getCustomerEmail(),
-                customerEditDto.getCustomerAddress(), 0);
+                customerEditDto.getCustomerAddress());
         customerService.save(customer);
         redirectAttributes.addFlashAttribute("msg", "Chỉnh sửa thành công");
         return "redirect:/customer";

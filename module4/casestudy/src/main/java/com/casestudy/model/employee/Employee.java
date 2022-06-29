@@ -51,7 +51,7 @@ public class Employee {
     private User user;
 
     @Column(name = "status_delete", columnDefinition = "BIT(1)")
-    private Integer statusDelete;
+    private Integer statusDelete = 0;
 
     public Employee() {
     }
@@ -67,8 +67,7 @@ public class Employee {
                     Position position,
                     EducationDegree educationDegree,
                     Division division,
-                    User user,
-                    Integer statusDelete) {
+                    User user) {
         this.employeeId = employeeId;
         this.employeeName = employeeName;
         this.employeeBirthDay = employeeBirthDay;
@@ -81,7 +80,6 @@ public class Employee {
         this.educationDegree = educationDegree;
         this.division = division;
         this.user = user;
-        this.statusDelete = statusDelete;
     }
 
     public Integer getEmployeeId() {

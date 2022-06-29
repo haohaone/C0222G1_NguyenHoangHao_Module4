@@ -37,7 +37,7 @@ public class Customer {
     private String customerAddress;
 
     @Column(name = "status_delete", columnDefinition = "BIT(1)")
-    private Integer statusDelete;
+    private Integer statusDelete = 0;
 
     @OneToMany(mappedBy = "customer")
     private Set<Contract> contractList;
@@ -53,8 +53,7 @@ public class Customer {
                     String customerIdCard,
                     String customerPhone,
                     String customerEmail,
-                    String customerAddress,
-                    Integer statusDelete) {
+                    String customerAddress) {
         this.customerId = customerId;
         this.customerType = customerType;
         this.customerName = customerName;
@@ -64,7 +63,6 @@ public class Customer {
         this.customerPhone = customerPhone;
         this.customerEmail = customerEmail;
         this.customerAddress = customerAddress;
-        this.statusDelete = statusDelete;
     }
 
     public String getCustomerId() {

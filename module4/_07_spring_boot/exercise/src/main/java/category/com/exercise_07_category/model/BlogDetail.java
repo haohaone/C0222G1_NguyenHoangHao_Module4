@@ -1,5 +1,7 @@
 package category.com.exercise_07_category.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 
 @Entity(name = "blog_detail")
@@ -13,6 +15,7 @@ public class BlogDetail {
     private String content;
 
     @OneToOne(mappedBy = "blogDetail")
+    @JsonBackReference(value = "blog-detail-blog")
     private Blog blog;
 
     public BlogDetail() {
