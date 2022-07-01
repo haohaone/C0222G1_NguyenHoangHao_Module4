@@ -5,6 +5,8 @@
     <title>Danh sách blog</title>
     <link rel="stylesheet" href="/resources/bootstrap413/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/resources/datatables/css/dataTables.bootstrap4.min.css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"/>
     <style>
         .center-box {
             display: flex;
@@ -35,12 +37,19 @@
 </nav>
 <div class="p-0 m-0" style="width: 10%; float: left">&nbsp;</div>
 <div class="h-100 p-0 m-0" style="width: 80%; float: left">
-    <table class="table text-center table-striped bg-white w-100 border-0" id="tableEmployee">
-        <thead>
+    <table class="table text-center table-striped bg-white w-100 border-0" id="table">
         <tr>
             <th colspan="11">
-                <div class="w-100 footer">
-                    <a href="/create-blog">Thêm mới</a>
+                <div class="row w-100">
+                    <div class="col-md-6 center-box">
+                        <a href="/create-blog">Thêm mới</a>
+                    </div>
+                    <div class="col-md-6 center-box">
+                        <a href="#" data-toggle="modal" data-target="#SearchByName"
+                           class="font-weight-bold">
+                            Tìm kiếm blog
+                        </a>
+                    </div>
                 </div>
             </th>
         </tr>
@@ -51,37 +60,70 @@
             <th>Edit</th>
             <th>Delete</th>
         </tr>
-        </thead>
 
-        <tbody>
         <tr th:each="blog: ${blogList}">
             <td th:text="${blog.id}"></td>
             <td th:text="${blog.tittle}"></td>
             <td>
                 <button class="btn btn-primary" th:attr="onclick=|detail(${blog.id}, '${blog.tittle}')|"
-                   data-toggle="modal"
-                   data-target="#detail">
+                        data-toggle="modal"
+                        data-target="#detail">
                     Chi tiết
                 </button>
             </td>
             <td>
-                <button class="btn btn-primary" th:onclick="'edit(\'' + ${blog.id}+  '\');'" >
+                <button class="btn btn-primary" th:onclick="'edit(\'' + ${blog.id}+  '\');'">
                     Chỉnh sửa
                 </button>
             </td>
             <td>
-                <button class="btn btn-primary"  th:attr="onclick=|musicIndex(${blog.id}, '${blog.tittle}')|"
-                   data-toggle="modal"
-                   data-target="#delete">
+                <button class="btn btn-primary" th:attr="onclick=|musicIndex(${blog.id}, '${blog.tittle}')|"
+                        data-toggle="modal"
+                        data-target="#delete">
                     Xóa
                 </button>
             </td>
         </tr>
-        </tbody>
+        <tr>
+            <th colspan="11">
+                <div class="row w-100">
+                    <div class="col-md-12 center-box">
+                        <button class="btn btn-primary" th:attr="onclick=|moreBlog(${blogList.size()})|">Tải thêm
+                        </button>
+                    </div>
+                </div>
+            </th>
+        </tr>
     </table>
 </div>
 <div class="p-0 m-0" style="width: 10%; float: left">&nbsp;</div>
 
+<div class="modal" id="SearchByName">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header w-100">
+                <div class="w-100 center-box">
+                    <form class="form-inline my-2 my-lg-0 w-100 center-box">
+                        <div class="row p-1 rounded rounded-pill w-100  center-box">
+                            <div class="col-md-12 input-group center-box shadow-sm bg-light w-100 p-0">
+                                <input type="search" placeholder="Tên nhân viên" aria-describedby="button-addon1"
+                                       class="form-control border-0 w-75 bg-light "
+                                       id="tittleSearch">
+                                <div class="input-group-append bg-light w-25">
+                                    <button onclick="search()" type="button" data-dismiss="modal"
+                                            class="btn bg-light btn-link text-primary w-100">
+                                        <i class="bi bi-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="modal" id="detail">
     <div class="modal-dialog">
@@ -127,13 +169,106 @@
         crossorigin="anonymous"></script>
 <script src="/resources/bootstrap413/js/bootstrap.bundle.min.js"></script>
 <script>
-    $(document).ready(function () {
-        $('#tableEmployee').dataTable({
-            "dom": 'lrtip',
-            "lengthChange": false,
-            "pageLength": 3
-        });
-    })
+
+    function moreBlog(size) {
+        debugger
+        $.ajax({
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            type: "GET",
+            //tên API
+            url: "/blog-rest/more/" + size,
+            //xử lý khi thành công
+            success: changeTable
+        })
+    }
+
+    function search() {
+        let tittle = $('#tittleSearch').val();
+        $.ajax({
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            type: "GET",
+            data: JSON.stringify(tittle),
+            //tên API
+            url: "/blog-rest/search/" + tittle,
+            //xử lý khi thành công
+            success: changeTable
+
+        })
+    }
+
+    function changeTable(data) {
+        let str = `
+        <tr>
+            <th colspan="11">
+                <div class="row w-100">
+                    <div class="col-md-6 center-box">
+                        <a href="/create-blog">Thêm mới</a>
+                    </div>
+                    <div class="col-md-6 center-box">
+                        <a href="#" data-toggle="modal" data-target="#SearchByName"
+                           class="font-weight-bold">
+                            Tìm kiếm blog
+                        </a>
+                    </div>
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <th>No.</th>
+            <th>Tiêu đề</th>
+            <th>Xem chi tiết nội dung</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>`
+        // debugger
+        for (let i = 0; i < data.length; i++) {
+            str += getBlog(data[i])
+        }
+        str += `<tr>
+            <th colspan="11">
+                <div class="row w-100">
+                    <div class="col-md-12 center-box">
+                        <button class="btn btn-primary" onclick="moreBlog(${data.length})">Tải thêm
+                        </button>
+                    </div>
+                </div>
+            </th>
+        </tr>`
+        document.getElementById("table").innerHTML = str
+    }
+
+
+    function getBlog(blog) {
+        return `<tr>
+            <td>${blog.id}</td>
+            <td>${blog.tittle}</td>
+            <td>
+                <button class="btn btn-primary" onclick="detail(${blog.id}, '${blog.tittle}')"
+                   data-toggle="modal"
+                   data-target="#detail">
+                    Chi tiết
+                </button>
+            </td>
+            <td>
+                <button class="btn btn-primary" onclick="edit(${blog.id})">
+                    Chỉnh sửa
+                </button>
+            </td>
+            <td>
+                <button class="btn btn-primary"  onclick="musicIndex(${blog.id}, '${blog.tittle}')"
+                   data-toggle="modal"
+                   data-target="#delete">
+                    Xóa
+                </button>
+            </td>
+        </tr>`
+    }
 </script>
 
 <script>

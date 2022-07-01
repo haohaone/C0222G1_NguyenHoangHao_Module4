@@ -17,5 +17,6 @@ public interface CustomerRepository extends PagingAndSortingRepository<Customer,
     @Query(value = "SELECT * FROM customer WHERE customer_id = :id", nativeQuery = true)
     Customer findByCustomerId(@Param("id") String id);
 
-    Page<Customer> findByCustomerNameContains(String name, Pageable p);
+    @Query(value = "SELECT * FROM customer WHERE status_delete = 0 AND customer_name LIKE :name", nativeQuery = true)
+    Page<Customer> findByCustomerName(@Param("name") String name, Pageable p);
 }

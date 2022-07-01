@@ -33,4 +33,7 @@ public interface BlogRepository extends JpaRepository<Blog, Integer> {
     @Modifying
     @Query(value = "UPDATE blog SET tittle = :tittleBlog WHERE  id = :idBlog", nativeQuery = true)
     void edit(@Param("tittleBlog") String tittle, @Param("idBlog") int idBlog);
+
+    @Query(value = "SELECT * FROM blog WHERE status_delete <> 1 AND tittle LIKE :tittle", nativeQuery = true)
+    List<Blog> findByBlogTittle(@Param("tittle") String name);
 }

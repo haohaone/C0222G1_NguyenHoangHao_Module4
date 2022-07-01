@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Danh sách dịch vụ</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="/resources/bootstrap413/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/resources/datatables/css/dataTables.bootstrap4.min.css"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/bootstrap413/css/furama.css}"/>
+    <style>
+        .bg {
+            background-image: url(/bootstrap/bootstrap413/css/furama2.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body class=" w-100 bg" style="overflow: hidden">
+<nav class="navbar bg-white m-0 p-0" id="head">
+    <div class="row col-md-12 h-100 m-0 p-0">
+        <div class="col-md-2 m-0 p-0 center-box home">
+            <a href="/home">
+                <img src="https://furamavietnam.com/wp-content/uploads/2018/08/logo.png" class="logo">
+            </a>
+        </div>
+        <div class=" col-md-8 h-100 p-0 p-0 center-box home">
+            Danh sách dịch vụ
+        </div>
+        <div class=" col-md-2 center-box">
+        </div>
+    </div>
+</nav>
+
+<div class="row m-0 p-0  h-100  m-5">
+    <div class="col-md-1 m-0 h-100  p-0 center-box">&nbsp;</div>
+    <div class="col-md-10 h-100 m-0 p-0 center-box">
+        <div class=" bg-white center-box">
+            <table class="table border-0 text-center  table-hover bg-white" id="tableEmployee">
+                <tr>
+                    <td colspan="11" class="text-primary border-0">
+                        <div class="row w-100">
+                            <div class="col-md-6">
+                                <a href="/service?action=add" class="font-weight-bold"
+                                   data-toggle="modal" data-target="#addNew">
+                                    Thêm dịch vụ
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="/service?action=search" data-toggle="modal" data-target="#SearchByName"
+                                   class="font-weight-bold">
+                                    Tìm kiếm dịch vụ
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="11" th:if="${msg != null}">
+                        <div class="text-danger font-weight-bold" th:text="${msg}"></div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Mã dịch vụ</th>
+                    <th>Tên dịch vụ</th>
+                    <th>Diện tích</th>
+                    <th>Giá</th>
+                    <th>Loại thuê</th>
+                    <th>Loại Dịch vụ</th>
+                    <th>Tiêu chuẩn</th>
+                    <th>Dịch vụ khác</th>
+                    <th>Hồ bơi</th>
+                    <th>Tầng</th>
+                    <th>Edit</th>
+                    <th>Delel</th>
+                </tr>
+                <tr th:each="service: ${serviceList}">
+                    <td th:text="${service.serviceId}"></td>
+                    <td th:text="${service.serviceName}"></td>
+                    <td th:text="${service.serviceArea}"></td>
+                    <td th:text="${service.serviceCost}"></td>
+                    <td th:text="${service.rentType.rentTypeName}"></td>
+                    <td th:if="${service.serviceType != null}" th:text="${service.serviceType.serviceTypeName}"></td>
+                    <td th:if="${service.serviceType == null}"></td>
+                    <td th:text="${service.standardRoom}"></td>
+                    <td th:text="${service.description}"></td>
+                    <td th:text="${service.poolArea}"></td>
+                    <td th:text="${service.floor}"></td>
+                    <td>
+                        <a th:href="@{/service/edit/{id}(id = ${service.serviceId})}">Edit</a>
+                    </td>
+                    <td>
+                        <a href="#" th:attr="onclick=|serviceIndex('${service.serviceId}', '${service.serviceName}')|" data-toggle="modal"
+                           data-target="#delete">
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+                <td colspan="12">
+                    <div>
+                    <span>
+                        <a class=" btn btn-secondary" th:if="${serviceList.hasPrevious()}"
+                           th:href="@{/service(page = ${serviceList.number - 1})}">Previous</a>
+                    </span>
+                        <span th:each="pageNo: ${#numbers.sequence(0,serviceList.totalPages - 1)}">
+                        <a class=" btn btn-secondary" th:href="@{/service(page = ${pageNo})}" th:text="${pageNo}"></a>
+                    </span>
+                        <span>
+                        <a class=" btn btn-secondary" th:if="${serviceList.hasNext()}"
+                           th:href="@{/service(page = ${serviceList.number +1})}">Next</a>
+                    </span>
+                    </div>
+                </td>
+            </table>
+        </div>
+    </div>
+    <div class="col-md-1 m-0 p-0">&nbsp;</div>
+</div>
+</div>
+
+<div class="modal" id="delete">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title w-100 text-center" id="confirm"></h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark" onclick="serviceIndex2()">
+                    <a class="text-white">Xóa</a>
+                </button>
+                <button type="button" class="btn btn-dark " data-dismiss="modal">Hủy</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="addNew">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title w-100 text-center">Chọn loại dịch vụ muốn thêm</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body" style="display: flex; align-items: center; justify-content: space-around">
+                <button type="button" class="btn btn-dark w-25">
+                    <a href="/service/create/Villa" class="text-white">Villa</a>
+                </button>
+                <button type="button" class="btn btn-dark w-25">
+                    <a href="/service/create/House" class="text-white">House</a>
+                </button>
+                <button type="button" class="btn btn-dark w-25">
+                    <a href="/service/create/Room" class="text-white">Room</a>
+                </button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark " data-dismiss="modal">Hủy</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="SearchByName">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header w-100">
+                <div class="w-100 center-box">
+                    <form method="post" action="/service/search"
+                          class="form-inline my-2 my-lg-0 w-100 center-box">
+                        <div class="row p-1 rounded rounded-pill w-100  center-box">
+                            <div class="col-md-4 w-100">
+                                <select name="id" class="form-control custom-select bg-light">
+                                    <option th:value="''">Loại dịch vụ</option>
+                                    <option th:each="rentType: ${rentTypeList}"
+                                            th:value="${rentType.rentTypeId}"
+                                            th:text="${rentType.rentTypeName}">
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="col-md-8 input-group center-box shadow-sm bg-light w-100 p-0">
+                                <input type="search" placeholder="Tên dịch vụ" aria-describedby="button-addon1"
+                                       class="form-control border-0 w-75 bg-light "
+                                       name="name"
+                                >
+                                <div class="input-group-append bg-light w-25">
+                                    <button id="button-addon1" type="submit"
+                                            class="btn bg-light btn-link text-primary w-100">
+                                        <i class="bi bi-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="/jquery/jquery-3.5.1.min.js"></script>
+<script src="/datatables/js/jquery.dataTables.min.js"></script>
+<script src="/datatables/js/dataTables.bootstrap4.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="/bootstrap413/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    function serviceIndex(index, name) {
+        document.getElementById("confirm").innerHTML = "Bạn có muốn xóa dịch vụ" +name+  "<br>" + "Có ID là " + index;
+        id = index;
+    };
+
+    function serviceIndex2() {
+        let link = "/service/delete/" + id;
+        window.location.href = link;
+    };
+</script>
+</html>

@@ -18,4 +18,6 @@ public interface BlogService {
     void edit(String tittle, int id);
 
     void save(BlogDTO blogDTO);
+
+    List<Blog> search(String name);
 }

@@ -14,5 +14,6 @@ public interface EmployeeRepository extends CrudRepository<Employee, Integer> {
     @Query(value = "SELECT * FROM employee WHERE employee_id = :id", nativeQuery = true)
     Employee findByEmployeeId(@Param("id") int id);
 
-    Page<Employee> findByEmployeeNameContains(String name, Pageable p);
+    @Query(value = "SELECT * FROM employee WHERE status_delete = 0 AND employee_name LIKE :name", nativeQuery = true)
+    Page<Employee> findByEmployeeName(@Param("name") String name, Pageable p);
 }

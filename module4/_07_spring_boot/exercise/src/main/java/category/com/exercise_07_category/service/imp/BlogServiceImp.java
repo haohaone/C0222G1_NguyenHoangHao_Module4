@@ -43,4 +43,9 @@ public class BlogServiceImp implements BlogService {
         int blog_detail_id = blogDetailService.findAll().size();
         blogRepository.create(blogDTO.getTittle().toUpperCase(), blog_detail_id, blogDTO.getCategory());
     }
+
+    @Override
+    public List<Blog> search(String name) {
+        return blogRepository.findByBlogTittle("%" + name + "%");
+    }
 }

@@ -8,6 +8,8 @@ import category.com.exercise_07_category.service.BlogService;
 import category.com.exercise_07_category.service.CategoryService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,6 +17,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -25,16 +28,19 @@ public class BlogController {
     private BlogDetailService blogDetailService;
     @Autowired
     private CategoryService categoryService;
-//Chiến gà
+
+    //Chiến gà
     @ModelAttribute("categoryList")
-    public List<Category> getListCategory(){
+    public List<Category> getListCategory() {
         return this.categoryService.findAll();
     }
 
     @GetMapping("/blog")
     public String showBlogList(Model model) {
         List<Blog> blogList = blogService.findAll();
-        model.addAttribute("blogList", blogList);
+        List<Blog> moreBlogList = new ArrayList<>();
+        moreBlogList.add(blogList.get(0));
+        model.addAttribute("blogList", moreBlogList);
         return "blog-views/blog-list";
     }
 

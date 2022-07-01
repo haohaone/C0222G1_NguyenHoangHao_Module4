@@ -37,6 +37,6 @@ public class EmployeeServiceImp implements EmployeeService {
 
     @Override
     public Page<Employee> findByEmployeeName(String name, Pageable p) {
-        return employeeRepository.findByEmployeeNameContains(name, p);
+        return employeeRepository.findByEmployeeName("%"+name+"%", p);
     }
 }
