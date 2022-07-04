@@ -32,19 +32,43 @@
     </style>
 </head>
 <body class="h-100">
-<nav class="navbar navbar-light bg-dark text-white center-box head-text">
-    Danh sách blog
+<nav class="navbar navbar-light bg-dark row">
+        <div class="col-md-4"> &nbsp;</div>
+        <div class="col-md-4 text-white center-box head-text">
+            Danh sách blog
+        </div>
+        <div class="col-md-2">&nbsp;</div>
+        <div class="col-md-2 footer">
+            <span th:if="${#request.userPrincipal != null}"
+                  th:text="${#request.userPrincipal.getName()}"
+                    class="text-white font-weight-bold">
+                &nbsp;
+            </span>
+            <span th:if="${#request.userPrincipal == null}">
+                &nbsp;
+            </span>
+            <a class="btn bg-white text-dark font-weight-bold" th:if="${#request.userPrincipal != null}" th:href="@{/logout}">Logout</a>
+            <a class="btn bg-white text-dark font-weight-bold" th:if="${#request.userPrincipal == null}" th:href="@{/login}">Login</a>
+        </div>
 </nav>
 <div class="p-0 m-0" style="width: 10%; float: left">&nbsp;</div>
 <div class="h-100 p-0 m-0" style="width: 80%; float: left">
     <table class="table text-center table-striped bg-white w-100 border-0" id="table">
         <tr>
             <th colspan="11">
-                <div class="row w-100">
+                <div class="row w-100" th:if="${#request.userPrincipal != null}">
                     <div class="col-md-6 center-box">
                         <a href="/create-blog">Thêm mới</a>
                     </div>
                     <div class="col-md-6 center-box">
+                        <a href="#" data-toggle="modal" data-target="#SearchByName"
+                           class="font-weight-bold">
+                            Tìm kiếm blog
+                        </a>
+                    </div>
+                </div>
+                <div class="row w-100" th:if="${#request.userPrincipal == null}">
+                    <div class="col-md-12 center-box">
                         <a href="#" data-toggle="modal" data-target="#SearchByName"
                            class="font-weight-bold">
                             Tìm kiếm blog
