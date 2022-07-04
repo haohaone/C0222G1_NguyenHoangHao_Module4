@@ -21,17 +21,13 @@ public class ContractDetail {
     @Column
     private Integer quantity;
 
-    @Column(name = "status_delete")
-    private Integer statusDelete = 0;
-
     public ContractDetail() {
     }
 
-    public ContractDetail(AttachService attachService, Contract contract, Integer quantity, Integer statusDelete) {
+    public ContractDetail(AttachService attachService, Contract contract, Integer quantity) {
         this.attachService = attachService;
         this.contract = contract;
         this.quantity = quantity;
-        this.statusDelete = statusDelete;
     }
 
     public AttachService getAttachService() {
@@ -56,13 +52,5 @@ public class ContractDetail {
 
     public void setQuantity(Integer quantity) {
         this.quantity = quantity;
-    }
-
-    public Integer getStatusDelete() {
-        return statusDelete;
-    }
-
-    public void setStatusDelete(Integer statusDelete) {
-        this.statusDelete = statusDelete;
     }
 }

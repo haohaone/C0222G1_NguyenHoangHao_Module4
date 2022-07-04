@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.List;
+
 @org.springframework.stereotype.Service
 public class ServiceSerImp implements ServiceSer {
     @Autowired
@@ -15,6 +17,11 @@ public class ServiceSerImp implements ServiceSer {
     @Override
     public Page<Service> findAll(Pageable p) {
         return serviceRepository.findAllService(p);
+    }
+
+    @Override
+    public List<Service> findAll() {
+        return serviceRepository.findAll();
     }
 
     @Override
@@ -31,7 +38,7 @@ public class ServiceSerImp implements ServiceSer {
 
     @Override
     public void save(Service service) {
-
+        serviceRepository.save(service);
     }
 
     @Override

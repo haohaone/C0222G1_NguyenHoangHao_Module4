@@ -15,7 +15,7 @@ public class AttachService {
     private String attachServiceName;
 
     @Column(name = "attach_service_cost", columnDefinition = "DOUBLE")
-    private String attachServiceCost;
+    private Double attachServiceCost;
 
     @Column(name = "attach_service_unit", columnDefinition = "VARCHAR(45)")
     private String attachServiceUnit;
@@ -31,7 +31,7 @@ public class AttachService {
 
     public AttachService(Integer attachServiceId,
                          String attachServiceName,
-                         String attachServiceCost,
+                         Double attachServiceCost,
                          String attachServiceUnit,
                          String attachServiceStatus,
                          Set<ContractDetail> contractList) {
@@ -59,11 +59,11 @@ public class AttachService {
         this.attachServiceName = attachServiceName;
     }
 
-    public String getAttachServiceCost() {
+    public Double getAttachServiceCost() {
         return attachServiceCost;
     }
 
-    public void setAttachServiceCost(String attachServiceCost) {
+    public void setAttachServiceCost(Double attachServiceCost) {
         this.attachServiceCost = attachServiceCost;
     }
 

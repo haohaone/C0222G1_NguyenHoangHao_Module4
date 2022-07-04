@@ -1,7 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41cf9ab8-1825-4bf8-bf49-04d5229591f2" name="Default Changelist" comment="" />
+    <list default="true" id="41cf9ab8-1825-4bf8-bf49-04d5229591f2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/module4/_11_web_service/practice/spring-customer-management-restful/src/main/java/com/codegym/cms/database/database.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/bootstrap413/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/bootstrap413/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/bootstrap413/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/bootstrap413/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/bootstrap413/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/bootstrap413/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/bootstrap413/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/bootstrap413/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/bootstrap413/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/bootstrap413/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/bootstrap413/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/bootstrap413/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/bootstrap413/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/bootstrap413/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/bootstrap413/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/bootstrap413/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/bootstrap413/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/bootstrap413/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/bootstrap413/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/bootstrap413/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/css/dataTables.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/css/dataTables.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/css/dataTables.bootstrap4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/css/dataTables.bootstrap4.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/css/dataTables.foundation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/css/dataTables.foundation.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/css/dataTables.jqueryui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/css/dataTables.jqueryui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/css/dataTables.semanticui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/css/dataTables.semanticui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/css/jquery.dataTables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/css/jquery.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/images/sort_asc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/images/sort_asc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/images/sort_both.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/images/sort_desc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/images/sort_desc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/js/dataTables.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/js/dataTables.bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/js/dataTables.bootstrap4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/js/dataTables.bootstrap4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/js/dataTables.foundation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/js/dataTables.foundation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/js/dataTables.jqueryui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/js/dataTables.jqueryui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/js/dataTables.semanticui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/js/dataTables.semanticui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/js/jquery.dataTables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/datatables/js/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/boostrap/jquery/jquery-3.5.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/casestudy/src/main/java/com/casestudy/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/casestudy/src/main/java/com/casestudy/model/dto/service_dto/ServiceDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/casestudy/src/main/resources/templates/views/service/create-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module4/casestudy/src/main/resources/valid/msg_valid.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module4/_11_web_service/practice/spring-customer-management-restful/src/main/java/com/codegym/cms/configuration/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/module4/_11_web_service/practice/spring-customer-management-restful/src/main/java/com/codegym/cms/configuration/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/java/com/codegym/configuration/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/java/com/codegym/configuration/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/java/com/codegym/controller/SmartphoneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/java/com/codegym/controller/SmartphoneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/java/com/codegym/model/Smartphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/java/com/codegym/model/Smartphone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/views/phones/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management/src/main/webapp/WEB-INF/views/phones/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module4/casestudy/src/main/java/com/casestudy/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/module4/casestudy/src/main/java/com/casestudy/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module4/casestudy/src/main/java/com/casestudy/controller/ServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/module4/casestudy/src/main/java/com/casestudy/controller/ServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module4/casestudy/src/main/java/com/casestudy/model/dto/service_dto/HouseDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module4/casestudy/src/main/java/com/casestudy/model/dto/service_dto/RoomDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module4/casestudy/src/main/java/com/casestudy/model/dto/service_dto/VillaDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module4/casestudy/src/main/java/com/casestudy/model/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/module4/casestudy/src/main/java/com/casestudy/model/service/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module4/casestudy/src/main/resources/templates/views/customer/create-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/module4/casestudy/src/main/resources/templates/views/customer/create-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module4/casestudy/src/main/resources/templates/views/customer/customer-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/module4/casestudy/src/main/resources/templates/views/customer/customer-list.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,17 +81,40 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="2BCvhPmvDFpMWyXUjn6fz48qSj0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/module4/casestudy" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="41cf9ab8-1825-4bf8-bf49-04d5229591f2" name="Default Changelist" comment="" />
       <created>1656422999647</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1656422999647</updated>
+      <workItem from="1656769518879" duration="20000" />
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1656769535289">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1656769535289" />
   </component>
 </project>

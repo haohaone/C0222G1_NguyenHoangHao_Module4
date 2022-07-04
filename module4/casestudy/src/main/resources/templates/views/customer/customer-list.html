@@ -92,7 +92,7 @@
                         </a>
                     </td>
                 </tr>
-                <td colspan="9">
+                <td colspan="9" th:if="${cookieSearch == null}">
                     <div>
                     <span>
                         <a class=" btn btn-secondary" th:if="${customerList.hasPrevious()}"
@@ -104,6 +104,21 @@
                         <span>
                         <a class=" btn btn-secondary" th:if="${customerList.hasNext()}"
                            th:href="@{/customer(page = ${customerList.number +1})}">Next</a>
+                    </span>
+                    </div>
+                </td>
+                <td colspan="9" th:if="${cookieSearch != null}">
+                    <div>
+                    <span>
+                        <a class=" btn btn-secondary" th:if="${customerList.hasPrevious()}"
+                           th:href="@{/customer/search(page = ${customerList.number - 1})}">Previous</a>
+                    </span>
+                        <span th:each="pageNo: ${#numbers.sequence(0,customerList.totalPages - 1)}">
+                        <a class=" btn btn-secondary" th:href="@{/customer/search(page = ${pageNo})}" th:text="${pageNo}"></a>
+                    </span>
+                        <span>
+                        <a class=" btn btn-secondary" th:if="${customerList.hasNext()}"
+                           th:href="@{/customer/search(page = ${customerList.number +1})}">Next</a>
                     </span>
                     </div>
                 </td>
@@ -137,13 +152,13 @@
         <div class="modal-content">
             <div class="modal-header w-100">
                 <div class="w-100 center-box">
-                    <form method="post" action="/customer/search"
+                    <form method="get" action="/customer/search"
                           class="form-inline my-2 my-lg-0 w-100 center-box">
                         <div class="row p-1 rounded rounded-pill w-100  center-box">
                             <div class="col-md-12 input-group center-box shadow-sm bg-light w-100 p-0">
                                 <input type="search" placeholder="Tên khách hàng" aria-describedby="button-addon1"
                                        class="form-control border-0 w-75 bg-light "
-                                       name="name">
+                                       name="search">
                                 <div class="input-group-append bg-light w-25">
                                     <button id="button-addon1" type="submit"
                                             class="btn bg-light btn-link text-primary w-100">

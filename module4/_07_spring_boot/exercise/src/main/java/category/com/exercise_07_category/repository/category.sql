@@ -20,3 +20,7 @@ INSERT INTO blog(status_delete, tittle, blog_detail_id, category_id) VALUE
 (0, 'LỢI ÍCH CỦA VIỆC ĐÁNH BÓNG HÀNG TUẦN', 4, 2),
 (0, 'NHỮNG ĐIỀU BÍ ẨN SAU TRẬN CHUNG KẾT CUP C1', 5, 2),
 (0, 'NÓI CHUYỆN PHIẾM VỀ THỜI TRANG HÈ 2022', 6, 3);
+
+INSERT INTO `user` VALUE
+('haohaone', '$2a$12$/4MkPDKArQTXP/DvABG4NesxdQM9wMgbJ41xpOQAr/DHGrE7o8Lva'),
+('uyennguday', '$2a$12$cJGid0EJyJWkPrB/YATL.uHwRIqh8kldOKniuhmIOSaj9zQe1baiG');

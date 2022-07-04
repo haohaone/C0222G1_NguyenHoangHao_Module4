@@ -5,6 +5,7 @@ import com.casestudy.model.employee.Employee;
 import com.casestudy.model.service.Service;
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.Set;
 
 @Entity(name = "contract")
@@ -21,17 +22,11 @@ public class Contract {
     @Column(name = "contract_end_date", columnDefinition = "DATE")
     private String endDate;
 
-    @Column(name = "status_detail", columnDefinition = "BIT(1)")
-    private Integer statusDetail;
-
     @Column(name = "status_delete", columnDefinition = "BIT(1)")
     private Integer statusDelete;
 
     @Column(name = "contract_deposit", columnDefinition = "DOUBLE")
     private String deposit;
-
-    @Column(name = "contract_total_money", columnDefinition = "DOUBLE")
-    private String totalMoney;
 
     @ManyToOne
     @JoinColumn(name = "employee_id", columnDefinition = "INT", referencedColumnName = "employee_id")
@@ -46,7 +41,7 @@ public class Contract {
     private Service service;
 
     @OneToMany(mappedBy = "contract")
-    private Set<ContractDetail> contractDetailList;
+    private List<ContractDetail> contractDetailList;
 
     public int getContractId() {
         return contractId;
@@ -58,25 +53,28 @@ public class Contract {
     public Contract(int contractId,
                     String startDate,
                     String endDate,
-                    Integer statusDetail,
                     Integer statusDelete,
                     String deposit,
-                    String totalMoney,
                     Employee employee,
                     Customer customer,
                     Service service) {
         this.contractId = contractId;
         this.startDate = startDate;
         this.endDate = endDate;
-        this.statusDetail = statusDetail;
         this.statusDelete = statusDelete;
         this.deposit = deposit;
-        this.totalMoney = totalMoney;
         this.employee = employee;
         this.customer = customer;
         this.service = service;
     }
 
+    public Double getTotalCost() {
+        Double totalCost = 0.0;
+        for (ContractDetail contractDetail : contractDetailList) {
+            totalCost += contractDetail.getAttachService().getAttachServiceCost() * contractDetail.getQuantity();
+        }
+        return totalCost;
+    }
 
     public void setContractId(int contractId) {
         this.contractId = contractId;
@@ -98,14 +96,6 @@ public class Contract {
         this.endDate = endDate;
     }
 
-    public Integer getStatusDetail() {
-        return statusDetail;
-    }
-
-    public void setStatusDetail(Integer statusDetail) {
-        this.statusDetail = statusDetail;
-    }
-
     public Integer getStatusDelete() {
         return statusDelete;
     }
@@ -120,14 +110,6 @@ public class Contract {
 
     public void setDeposit(String deposit) {
         this.deposit = deposit;
-    }
-
-    public String getTotalMoney() {
-        return totalMoney;
-    }
-
-    public void setTotalMoney(String totalMoney) {
-        this.totalMoney = totalMoney;
     }
 
     public Employee getEmployee() {
@@ -154,11 +136,11 @@ public class Contract {
         this.service = service;
     }
 
-    public Set<ContractDetail> getContractDetailList() {
+    public List<ContractDetail> getContractDetailList() {
         return contractDetailList;
     }
 
-    public void setContractDetailList(Set<ContractDetail> contractDetailList) {
+    public void setContractDetailList(List<ContractDetail> contractDetailList) {
         this.contractDetailList = contractDetailList;
     }
 }

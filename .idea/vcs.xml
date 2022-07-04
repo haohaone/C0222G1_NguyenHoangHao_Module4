@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module4/_11_web_service/practice/spring-customer-management-restful" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module4/_12_ajax/pratice/spring-phone-management" vcs="Git" />
+  </component>
+</project>

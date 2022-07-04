@@ -4,8 +4,12 @@ import com.casestudy.model.customer.Customer;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.List;
+
 public interface CustomerService {
     Page<Customer> findAll(Pageable p);
+
+    List<Customer> findAll();
 
     Customer findById(String id);
 

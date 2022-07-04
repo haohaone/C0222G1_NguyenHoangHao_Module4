@@ -99,14 +99,14 @@
                     <div>
                     <span>
                         <a class=" btn btn-secondary" th:if="${employeeList.hasPrevious()}"
-                           th:href="@{/employee(page = ${employeeList.number - 1})}">Previous</a>
+                           th:href="@{/employee(page = ${employeeList.number - 1}, name = ${name})}">Previous</a>
                     </span>
                         <span th:each="pageNo: ${#numbers.sequence(0,employeeList.totalPages - 1)}">
-                        <a class=" btn btn-secondary" th:href="@{/employee(page = ${pageNo})}" th:text="${pageNo}"></a>
+                        <a class=" btn btn-secondary" th:href="@{/employee(page = ${pageNo}, name = ${name})}" th:text="${pageNo}"></a>
                     </span>
-                        <span>
+                    <span>
                         <a class=" btn btn-secondary" th:if="${employeeList.hasNext()}"
-                           th:href="@{/emloyee(page = ${employeeList.number +1})}">Next</a>
+                           th:href="@{/employee(page = ${employeeList.number +1}, name = ${name})}">Next</a>
                     </span>
                     </div>
                 </td>
@@ -140,7 +140,7 @@
         <div class="modal-content">
             <div class="modal-header w-100">
                 <div class="w-100 center-box">
-                    <form method="post" action="/employee/search"
+                    <form method="get" action="/employee"
                           class="form-inline my-2 my-lg-0 w-100 center-box">
                         <div class="row p-1 rounded rounded-pill w-100  center-box">
                             <div class="col-md-12 input-group center-box shadow-sm bg-light w-100 p-0">

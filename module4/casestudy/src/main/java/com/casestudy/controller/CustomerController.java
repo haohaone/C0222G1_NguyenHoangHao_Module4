@@ -15,6 +15,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 import java.util.List;
 
@@ -46,13 +48,30 @@ public class CustomerController {
         return "redirect:/customer";
     }
 
-    @PostMapping("/search")
-    public String search(@RequestParam(name = "name") String name,
+    @GetMapping("/search")
+    public String search(@RequestParam(name = "search", required = false, defaultValue = "none") String search,
                          @RequestParam(name = "page", defaultValue = "0") int page,
-                         Model model) {
-        Page<Customer> customerList = customerService.findByCustomerName(name, PageRequest.of(page, 4));
-        model.addAttribute("customerList", customerList);
-        return "views/customer/customer-list";
+                         Model model,
+                         @CookieValue(value = "cookieSearch", defaultValue = "0") String cookieSearch,
+                         HttpServletResponse response) {
+        Page<Customer> customerList;
+        if (search.equals("none")){
+            customerList = customerService.findByCustomerName(cookieSearch, PageRequest.of(page, 2));
+            model.addAttribute("customerList", customerList);
+            Cookie cookie = new Cookie("cookieSearch", cookieSearch);
+            cookie.setMaxAge(60 * 5);
+            response.addCookie(cookie);
+            model.addAttribute("cookieSearch", cookieSearch);
+            return "views/customer/customer-list";
+        }else {
+            customerList = customerService.findByCustomerName(search, PageRequest.of(page, 2));
+            model.addAttribute("customerList", customerList);
+            Cookie cookie = new Cookie("cookieSearch", search);
+            cookie.setMaxAge(60 * 5);
+            response.addCookie(cookie);
+            model.addAttribute("cookieSearch", cookieSearch);
+            return "views/customer/customer-list";
+        }
     }
 
     @GetMapping("/create")

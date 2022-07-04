@@ -63,9 +63,12 @@ public class EmployeeController {
     }
 
     @GetMapping("")
-    public String showEmployeeList(@RequestParam(name = "page", defaultValue = "0") int page, Model model) {
-        Page<Employee> employeeList = employeeService.findAll(PageRequest.of(page, 4));
+    public String showEmployeeList(@RequestParam(name = "page", defaultValue = "0") int page,
+                                   @RequestParam(name = "name", defaultValue = "") String name,
+                                   Model model) {
+        Page<Employee> employeeList = employeeService.findByEmployeeName(name, PageRequest.of(page, 4));
         model.addAttribute("employeeList", employeeList);
+        model.addAttribute("name", name);
         return "views/employee/employee-list";
     }
 

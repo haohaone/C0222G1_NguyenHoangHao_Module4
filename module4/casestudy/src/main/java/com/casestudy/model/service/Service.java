@@ -73,6 +73,48 @@ public class Service {
         this.statusDelete = statusDelete;
     }
 
+    public Service(String serviceId,
+                   String serviceName,
+                   Double serviceCost,
+                   Double serviceArea,
+                   Integer serviceMaxPeople,
+                   RentType rentType,
+                   ServiceType serviceType,
+                   String standardRoom,
+                   String description,
+                   Integer floor,
+                   Integer statusDelete) {
+        this.serviceId = serviceId;
+        this.serviceName = serviceName;
+        this.serviceCost = serviceCost;
+        this.serviceArea = serviceArea;
+        this.serviceMaxPeople = serviceMaxPeople;
+        this.rentType = rentType;
+        this.serviceType = serviceType;
+        this.standardRoom = standardRoom;
+        this.description = description;
+        this.floor = floor;
+        this.statusDelete = statusDelete;
+    }
+
+    public Service(String serviceId,
+                   String serviceName,
+                   Double serviceCost,
+                   Double serviceArea,
+                   Integer serviceMaxPeople,
+                   RentType rentType,
+                   ServiceType serviceType,
+                   Integer statusDelete) {
+        this.serviceId = serviceId;
+        this.serviceName = serviceName;
+        this.serviceCost = serviceCost;
+        this.serviceArea = serviceArea;
+        this.serviceMaxPeople = serviceMaxPeople;
+        this.rentType = rentType;
+        this.serviceType = serviceType;
+        this.statusDelete = statusDelete;
+    }
+
     public String getServiceId() {
         return serviceId;
     }

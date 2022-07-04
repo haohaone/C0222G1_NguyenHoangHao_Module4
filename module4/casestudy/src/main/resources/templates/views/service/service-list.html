@@ -38,7 +38,7 @@
         <div class=" bg-white center-box">
             <table class="table border-0 text-center  table-hover bg-white" id="tableEmployee">
                 <tr>
-                    <td colspan="11" class="text-primary border-0">
+                    <td colspan="12" class="text-primary border-0">
                         <div class="row w-100">
                             <div class="col-md-6">
                                 <a href="/service?action=add" class="font-weight-bold"
@@ -56,7 +56,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <th colspan="11" th:if="${msg != null}">
+                    <th colspan="12" th:if="${msg != null}">
                         <div class="text-danger font-weight-bold" th:text="${msg}"></div>
                     </th>
                 </tr>
@@ -100,14 +100,14 @@
                     <div>
                     <span>
                         <a class=" btn btn-secondary" th:if="${serviceList.hasPrevious()}"
-                           th:href="@{/service(page = ${serviceList.number - 1})}">Previous</a>
+                           th:href="@{/service(page = ${serviceList.number - 1}, name = ${name}, id = ${id})}">Previous</a>
                     </span>
                         <span th:each="pageNo: ${#numbers.sequence(0,serviceList.totalPages - 1)}">
-                        <a class=" btn btn-secondary" th:href="@{/service(page = ${pageNo})}" th:text="${pageNo}"></a>
+                        <a class=" btn btn-secondary" th:href="@{/service(page = ${pageNo}, name = ${name}, id = ${id})}" th:text="${pageNo}"></a>
                     </span>
                         <span>
                         <a class=" btn btn-secondary" th:if="${serviceList.hasNext()}"
-                           th:href="@{/service(page = ${serviceList.number +1})}">Next</a>
+                           th:href="@{/service(page = ${serviceList.number +1}, name = ${name}, id = ${id})}">Next</a>
                     </span>
                     </div>
                 </td>
@@ -165,7 +165,7 @@
         <div class="modal-content">
             <div class="modal-header w-100">
                 <div class="w-100 center-box">
-                    <form method="post" action="/service/search"
+                    <form method="get" action="/service"
                           class="form-inline my-2 my-lg-0 w-100 center-box">
                         <div class="row p-1 rounded rounded-pill w-100  center-box">
                             <div class="col-md-4 w-100">
